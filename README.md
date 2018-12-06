@@ -1,1 +1,1 @@
-# qa=vaQ.github.io
+# qa-vaQ.github.io
