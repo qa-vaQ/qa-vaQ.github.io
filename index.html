@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf=8">
-        <style type="text/css">
-            #posts {
-                width: 90%;
-                height: 700px;
-                margin: auto
-            }
-        </style>
-    </head>
-    <body onload="return ran_col()">
-        <div id="posts">
-        </div>
-        <script type="text/javascript">
-            function ran_col() { //function name
-                var color = '#'; // hexadecimal starting symbol
-                var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0']; //Set your colors here
-                color += letters[Math.floor(Math.random() * letters.length)];
-                document.getElementById('posts').style.background = color; // Setting the random color on your div element.
-            }
-        </script>
-    </body>
-</html>
+<body>
 <html>
 <title>I am very, very bored</title>
 </head>
@@ -50,7 +26,14 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y98De45A94Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IYTJfLyo_vE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-
+<script type="text/javascript">
+    function get_random_color() { //function name
+            var color = '#'; // hexadecimal starting symbol
+            var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0']; //Set your colors here
+            color += letters[Math.floor(Math.random() * letters.length)];
+            document.getElementById('header').style.borderBottom = color; // Setting the random color on your div element.
+        }
+</script>
   
 </body>
 </html>
