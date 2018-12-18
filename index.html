@@ -18,7 +18,6 @@
 <img src="lisa.jpg" alt="lisa sonic" style="width:300px;height:300px;">
 <iframe height="80px" width="300px" frameborder="0" src="https://akshatmittal.com/youtube-realtime/embed/#!/UC-lHJZR3Gqxm24_Vd_AJ5Yw" style="border: 0; width:300px; height:80px; background-color: #FFF;"></iframe>
 <iframe height="80px" width="300px" frameborder="0" src="https://akshatmittal.com/youtube-realtime/embed/#!/UCq-Fj5jknLsUf-MWSy4_brA" style="border: 0; width:300px; height:80px; background-color: #FFF;"></iframe>
-<body bgcolor="00B5FF">
 <link rel="icon" href="favicon.ico"></link>
 <p>   <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,7 +27,31 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y98De45A94Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IYTJfLyo_vE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf=8">
+        <style type="text/css">
+            #posts {
+                width: 90%;
+                height: 700px;
+                margin: auto
+            }
+        </style>
+    </head>
+    <body onload="return ran_col()">
+        <div id="posts">
+        </div>
+        <script type="text/javascript">
+            function ran_col() { //function name
+                var color = '#'; // hexadecimal starting symbol
+                var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0']; //Set your colors here
+                color += letters[Math.floor(Math.random() * letters.length)];
+                document.getElementById('posts').style.background = color; // Setting the random color on your div element.
+            }
+        </script>
+    </body>
+</html>
 
   
 </body>
