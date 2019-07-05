@@ -124,4 +124,8 @@
 	background: #444;
 	color: #afa;
 }
+body {
+  background-color: #00FFFF;
+  transition: all 3.0s linear;
+}
 
