@@ -2,7 +2,7 @@ var counter = 0;
 var colors = ["#000000","#ffffff"];
 
 function setup() {
-  setInterval(changeColor, 100);
+  setInterval(changeColor, 500);
  }
  
  function changeColor() {
