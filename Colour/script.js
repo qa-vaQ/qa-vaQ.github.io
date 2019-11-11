@@ -1,5 +1,5 @@
 var counter = 0;
-var colors = ["#000001","#fffffE"];
+var colors = ["#000001","#fffffe"];
 
 function setup() {
   setInterval(changeColor, 500);
