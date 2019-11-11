@@ -9,7 +9,7 @@ function setup() {
   var body = document.body;
   body.style.backgroundColor = colors[counter];
   
-  if(counter == 6) {
+  if(counter == 7) {
     counter = 0;
   } else {
     counter++;
