@@ -1,4 +1,8 @@
-﻿@font-face {
+body {
+  background-color: #00FFFF;
+  transition: all 3.0s linear;
+}
+@font-face {
    font-family: 'SMB';
    src: local('Super Mario Bros.'),
         url('fonts/Super Mario Bros.ttf') format('truetype');
@@ -41,7 +45,4 @@
 .matter {
 	margin: 0; padding: 0; z-index: 95; position: absolute; width: 32px; height: 32px;
 }
-body {
-  background-color: #00FFFF;
-  transition: all 3.0s linear;
-}
+
