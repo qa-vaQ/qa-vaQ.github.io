@@ -4,7 +4,7 @@
         url('fonts/Super Mario Bros.ttf') format('truetype');
    font-style: normal;
 }
-#body {
+body {
   background-color: #00FFFF;
   transition: all 3.0s linear;
 }
