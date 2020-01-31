@@ -6,7 +6,7 @@
 }
 #body {
   background-color: #00FFFF;
-  transition: all 3.0s linear;
+  tranition: all 3.0s linear;
 }
 #game {
 	height: 480px; width: 640px; position: absolute; left: 50%; top: 50%;
