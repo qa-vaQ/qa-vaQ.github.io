@@ -4,7 +4,10 @@
         url('fonts/Super Mario Bros.ttf') format('truetype');
    font-style: normal;
 }
-
+#body {
+  background-color: #00FFFF;
+  transition: all 3.0s linear;
+}
 #game {
 	height: 480px; width: 640px; position: absolute; left: 50%; top: 50%;
 	margin-left: -321px; margin-top: -241px; border: 1px solid #ccc; overflow: hidden;
