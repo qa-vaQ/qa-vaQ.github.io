@@ -4,7 +4,7 @@
         <title>HTML5 Tetris</title>
         <meta charset="UTF-8">
 
-        <link href='http://fonts.googleapis.com/css?family=Lemon|Gochi+Hand' rel='stylesheet' type='text/css'>
+        <link href='style.css' rel='stylesheet' type='text/css'>
 
         <link id="fav" rel="shortcut icon" type="image/png" href="http://www.xarg.org/favicon.ico" />
         {literal}
@@ -192,7 +192,7 @@
                 display:none;
                 color: #c33;
             }
-            
+
             #slinks a {
                 color: #c00;
             }
@@ -201,101 +201,101 @@
         {/literal}
     </head>
     <body>
-        <center>
-            <h1>HTML5 TETRIS</h1>
 
-            <canvas id="canvas"></canvas>
-            <canvas id="preview"></canvas>
-            <canvas id="favicon"></canvas>
+        <h1>HTML5 TETRIS</h1>
 
-            <div id="edit">
-                <div id="open">Edit</div>
+        <canvas id="canvas"></canvas>
+        <canvas id="preview"></canvas>
+        <canvas id="favicon"></canvas>
 
-                <div><input id="tilesX" type="range" min="5" max="70" value="21" onchange="textBoxEdit(this)"> X <input id="tilesY" type="range" min="5" max="70" value="35" onchange="textBoxEdit(this)"> Tiles</div>
-                <div><input id="tilesSize" type="range" min="5" max="40" value="18" onchange="textBoxEdit(this)"> Tile-Size</div>
-                <div><input id="border" type="range" min="0" max="15" value="2" onchange="textBoxEdit(this)"> Border</div>
-                <div><input id="speedDelay" step="10" type="range" min="40" max="1000" value="200" onchange="textBoxEdit(this)"> Speed Delay</div>
+        <div id="edit">
+            <div id="open">Edit</div>
 
-                <div><input type="checkbox" value="1" id="Cpause" onchange="textBoxEdit(this)"> Pause (p)</div>
-                <div><input type="checkbox" value="1" id="Cauto" onchange="textBoxEdit(this)"> Autopilot (a)</div>
-                <div><input type="checkbox" value="1" id="Cshadow" onchange="textBoxEdit(this)" checked="checked"> Shadow (s)</div>
-                <div><input type="checkbox" value="1" id="Cpreview" onchange="textBoxEdit(this)" checked="checked"> Preview (w)</div>
-                <div><input type="checkbox" value="1" id="Cfavicon" onchange="textBoxEdit(this)" checked="checked"> Favicon (f)</div>
-                <div><input type="checkbox" value="1" id="Cgamepad" onchange="textBoxEdit(this)"> Gamepad</div>
+            <div><input id="tilesX" type="range" min="5" max="70" value="21" onchange="textBoxEdit(this)"> X <input id="tilesY" type="range" min="5" max="70" value="35" onchange="textBoxEdit(this)"> Tiles</div>
+            <div><input id="tilesSize" type="range" min="5" max="40" value="18" onchange="textBoxEdit(this)"> Tile-Size</div>
+            <div><input id="border" type="range" min="0" max="15" value="2" onchange="textBoxEdit(this)"> Border</div>
+            <div><input id="speedDelay" step="10" type="range" min="40" max="1000" value="200" onchange="textBoxEdit(this)"> Speed Delay</div>
 
-                <div>Active shadow and preview reduces the score per tile!</div>
+            <div><input type="checkbox" value="1" id="Cpause" onchange="textBoxEdit(this)"> Pause (p)</div>
+            <div><input type="checkbox" value="1" id="Cauto" onchange="textBoxEdit(this)"> Autopilot (a)</div>
+            <div><input type="checkbox" value="1" id="Cshadow" onchange="textBoxEdit(this)" checked="checked"> Shadow (s)</div>
+            <div><input type="checkbox" value="1" id="Cpreview" onchange="textBoxEdit(this)" checked="checked"> Preview (w)</div>
+            <div><input type="checkbox" value="1" id="Cfavicon" onchange="textBoxEdit(this)" checked="checked"> Favicon (f)</div>
+            <div><input type="checkbox" value="1" id="Cgamepad" onchange="textBoxEdit(this)"> Gamepad</div>
 
-                <div id="tables">
+            <div>Active shadow and preview reduces the score per tile!</div>
 
-                </div>
-
-                <div id="slinks">
-                    Share Custom Tetris<br>
-                    <a id="sFB" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">FB</a> -
-                    <a id="sTW" href="http://twitter.com/share?text=HTML5%20Tetris%20made%20by%20%40roberteisele&amp;url=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">TW</a> - 
-                    <a id="sGP" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">G+</a>
-                </div>
+            <div id="tables">
 
             </div>
 
-            <div id="best">
-                <div id="open2">Score</div>
-
-                <table>
-
-                    <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                        <th>Score</th>
-                        <th>Lines</th>
-                    </tr>
-                    {local:$i}
-                    {php}$i=0;{/php}
-                    {fores $score as $s}
-                    <tr>
-                        <td>#{!++$i}</td>
-                        <td>{$s.TName}</td>
-                        <td>{!$s.TScore}</td>
-                        <td>{!$s.TLine}</td>
-                    </tr>
-                    {/fores}
-                </table>
-
+            <div id="slinks">
+                Share Custom Tetris<br>
+                <a id="sFB" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">FB</a> -
+                <a id="sTW" href="http://twitter.com/share?text=HTML5%20Tetris%20made%20by%20%40roberteisele&amp;url=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">TW</a> - 
+                <a id="sGP" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">G+</a>
             </div>
 
-            <div id="highscore">
+        </div>
 
-                <div>Enter your name</div>
+        <div id="best">
+            <div id="open2">Score</div>
 
-                <input type="text" id="nick" placeholder="Your name">
+            <table>
 
-                <span id="submit">go</span>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Lines</th>
+                </tr>
+                {local:$i}
+                {php}$i=0;{/php}
+                {fores $score as $s}
+                <tr>
+                    <td>#{!++$i}</td>
+                    <td>{$s.TName}</td>
+                    <td>{!$s.TScore}</td>
+                    <td>{!$s.TLine}</td>
+                </tr>
+                {/fores}
+            </table>
 
+        </div>
+
+        <div id="highscore">
+
+            <div>Enter your name</div>
+
+            <input type="text" id="nick" placeholder="Your name">
+
+            <span id="submit">go</span>
+
+        </div>
+
+        <div id="restart">
+            Click to restart
+        </div>
+
+        <div style="position:absolute;left: 560px;top: 250px;">
+
+            <div style="height: 100px;">
+                <a id="home" href="http://www.xarg.org/project/tetris/">Highscore participation</a>
+            </div>
+            <div id="stat">
+                Score: <span id="score">0</span><br>
+                Lines: <span id="lines">0</span><br>
             </div>
 
-            <div id="restart">
-                Click to restart
-            </div>
 
-            <div style="position:absolute;left: 560px;top: 250px;">
+            <span id="OfCourseItsMe">by <a href="http://www.xarg.org/">Robert Eisele</a> (<a href="https://twitter.com/RobertEisele">Twitter</a>)<br>Source &amp; Description (<a href="https://github.com/infusion/HTML5-Tetris">Github</a>)</span>
 
-                <div style="height: 100px;">
-                    <a id="home" href="http://www.xarg.org/project/tetris/">Highscore participation</a>
-                </div>
-                <div id="stat">
-                    Score: <span id="score">0</span><br>
-                    Lines: <span id="lines">0</span><br>
-                </div>
+        </div>
 
 
-                <span id="OfCourseItsMe">by <a href="http://www.xarg.org/">Robert Eisele</a> (<a href="https://twitter.com/RobertEisele">Twitter</a>)<br>Source &amp; Description (<a href="https://github.com/infusion/HTML5-Tetris">Github</a>)</span>
+        <script src="/download/tetris.js"></script>
 
-            </div>
+        <a id="xarg" href="http://www.xarg.org/projects/"><img width="59" height="61" src="http://www.xarg.org/image/xarg-logo.png" alt="xarg open projects" /></a>
 
-
-            <script src="/download/tetris.js"></script>
-
-            <a id="xarg" href="http://www.xarg.org/projects/"><img width="59" height="61" src="http://www.xarg.org/image/xarg-logo.png" alt="xarg open projects" /></a>
-        </center>
     </body>
 </html>
