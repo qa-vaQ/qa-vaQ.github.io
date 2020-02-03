@@ -1,1 +1,1 @@
-**URL:ttps://qa-vaq.github.io/**
+**URL: https://qa-vaq.github.io/**
