@@ -2,4 +2,20 @@ body {
   background-color: #00FFFF;
   transition: all 3.0s linear;
 }
+p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+}
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+}
+a {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+li {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 14px;
 
