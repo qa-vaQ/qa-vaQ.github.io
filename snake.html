@@ -12,6 +12,12 @@
   		background-color: #00FFFF;
   		transition: all 3.0s linear;
 	}
+	.return{
+        	a{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+        		font-size: 14px;
+		}
+	}	
 </style>
 <style type="text/css">
             @import url("https://fonts.googleapis.com/css?family=VT323");
@@ -185,7 +191,11 @@
 </script>
 <body onload="setup()">
 <header class="wrap">
-                <center><a href="index.html">click here to go back, if you want to. I wouldn't</a></center>
+                <center>
+			<div class="return">
+				<a href="index.html">click here to go back, if you want to. I wouldn't</a>
+			</div>
+		</center>
 		<h1>Snake</h1>
                 <p class="score">Score: <span id="score_value">0</span></p>
             </header>
