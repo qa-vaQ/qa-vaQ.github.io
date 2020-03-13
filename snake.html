@@ -3,41 +3,26 @@
 
 <head>
 <meta charset="UTF-8">
-<title>I am very, very bored</title>
+<title>I am very,very bored</title>
+<link type="text/css" rel="stylesheet" href="style.css">
 <link rel="icon" href="Images/smol.ico"></link>
-<script type="application/javascript">
-var counter = 0;
-var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
-
-function setup() {
-  setInterval(changeColor, 3000);
- }
- 
- function changeColor() {
-  var body = document.body;
-  body.style.backgroundColor = colors[counter];
-  
-  if(counter == 6) {
-    counter = 0;
-  } else {
-    counter++;
-  }
-}
-</script>
+<script src="script.js"></script>
+<style>
+	body{
+  		background-color: #00FFFF;
+  		transition: all 3.0s linear;
+	}
+	.return{
+        	margin: 1px;
+  		padding: 1px;
+		a{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+        		font-size: 14px;
+		}
+	}	
+</style>
 <style type="text/css">
-            body{
-  		    body-background: #00FFFF;
-		    transition: all 3.0s linear;
-	    }
-	    .return{
-             	    margin: 1px;
-  		    padding: 1px;
-	        a{
-		        font-family: "Comic Sans MS", cursive, sans-serif;
-        	        font-size: 14px;
-	        }
-	    }
-	    @import url("https://fonts.googleapis.com/css?family=VT323");
+            @import url("https://fonts.googleapis.com/css?family=VT323");
 
             ::selection {color:#FFFFFF; background:transparent;}
             ::-moz-selection {color:#FFFFFF; background:transparent;}
@@ -187,7 +172,25 @@ function setup() {
                 color: #000;
             }
 </style>
-</head>
+<script>
+	var counter = 0;
+	var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
+
+	function setup() {
+	  setInterval(changeColor, 3000);
+	 }
+
+	 function changeColor() {
+	  var body = document.body;
+	  body.style.backgroundColor = colors[counter];
+
+	  if(counter == 6) {
+	    counter = 0;
+	  } else {
+	    counter++;
+	  }
+	}
+</script>
 <body onload="setup()">
 <center>
 	<div class="return">
@@ -241,6 +244,7 @@ function setup() {
             </div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
 
 <script type="text/javascript">
 (function(){  
