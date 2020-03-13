@@ -5,6 +5,25 @@
 <meta charset="UTF-8">
 <title>I am very,very bored</title>
 <link rel="icon" href="Images/smol.ico"></link>
+<script type="text/javascript">
+var counter = 0;
+var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
+
+function setup() {
+  setInterval(changeColor, 3000);
+ }
+ 
+ function changeColor() {
+  var body = document.body;
+  body.style.backgroundColor = colors[counter];
+  
+  if(counter == 6) {
+    counter = 0;
+  } else {
+    counter++;
+  }
+}
+</script>
 <style type="text/css">
             body{
   		    transition: all 3.0s linear;
@@ -167,25 +186,7 @@
                 color: #000;
             }
 </style>
-<script type="text/javascript">
-var counter = 0;
-var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
-
-function setup() {
-  setInterval(changeColor, 3000);
- }
- 
- function changeColor() {
-  var body = document.body;
-  body.style.backgroundColor = colors[counter];
-  
-  if(counter == 6) {
-    counter = 0;
-  } else {
-    counter++;
-  }
-}
-</script>
+</head>
 <body onload="setup()">
 <center>
 	<div class="return">
