@@ -4,15 +4,15 @@
  * Extract source code from chromium by congerh. */
 
 body {
+  verflow:hidden;
+  background-color: #00FFFF;
+  transition: all 3.0s linear;
   --google-blue-600: rgb(26, 115, 232);
   --google-blue-700: rgb(25, 103, 210);
   --google-gray-50: rgb(248, 249, 250);
   --google-gray-500: rgb(154, 160, 166);
   --google-gray-600: rgb(128, 134, 139);
   --google-gray-700: rgb(95, 99, 105);
-  overflow:hidden;
-  background-color: #00FFFF;
-  transition: all 3.0s linear;
 }
   word-wrap: break-word;
 }
