@@ -9,8 +9,49 @@
   </head>
   <body>
     <center>
-     <h1>Netmatters Website!!!</h1>
-     <p>Jacob is a Massive Pussy!!!<p>
+         <label id="show"></label>
+    <lable> Reg Number </lable> <input type="text" id="reg"> <br>
+    <lable> Miles Range </lable> <input type="text" id="milesR"> <br>
+    <lable> Miles Needed </lable> <input type="text" id="milesN"> <br>
+    <lable> Arrival Time </lable> <select id="arriveTime">
+        <option value="7.00"> 7.00 </option>
+        <option value="8.00"> 8.00 </option>
+        <option value="9.00"> 9.00 </option>
+        <option value="10.00"> 10.00 </option>
+        <option value="11.00"> 11.00 </option>
+        <option value="12.00"> 12.00 </option>
+        <option value="13.00"> 13.00 </option>
+        <option value="14.00"> 14.00 </option>
+        <option value="15.00"> 15.00 </option>
+        <option value="16.00"> 16.00 </option>
+    </select>
+    <lable> Leaving Time </lable> <select id="leaveTime">
+        <option value="8.00"> 8.00 </option>
+        <option value="9.00"> 9.00 </option>
+        <option value="10.00"> 10.00 </option>
+        <option value="11.00"> 11.00 </option>
+        <option value="12.00"> 12.00 </option>
+        <option value="13.00"> 13.00 </option>
+        <option value="14.00"> 14.00 </option>
+        <option value="15.00"> 15.00 </option>
+        <option value="16.00"> 16.00 </option>
+        <option value="17.00"> 17.00 </option>
+    </select>
+    <table style="width:100%" id="table">
+        <tr>
+            <th>Reg Number</th>
+            <th>Miles Range</th>
+            <th>Miles Needed</th>
+            <th>Leave Time</th>
+            <th>Miles Difference</th>
+        </tr>
+    </table>
+    <br>
+
+    <button onclick="myCreateFunction()">Submit</button>
+    <button onclick="myDeleteFunction()">Clear</button>
+
+<button onclick="calculate">Calculate</button>
     </center>
   </body>
 </html>
