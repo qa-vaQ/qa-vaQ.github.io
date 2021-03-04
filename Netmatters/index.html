@@ -2,13 +2,17 @@
 <html>
   <head>
     <style>
-      body {
-        background-image: url('IMG_20191126_094010_510.jpg');
-      } 
+      div.foregorund {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: #00FF00;
+      }
     </style>
   </head>
   <body>
-    <center>
+    <div class="foreground">
          <label id="show"></label>
     <lable> Reg Number </lable> <input type="text" id="reg"> <br>
     <lable> Miles Range </lable> <input type="text" id="milesR"> <br>
@@ -52,6 +56,6 @@
     <button onclick="myDeleteFunction()">Clear</button>
 
 <button onclick="calculate">Calculate</button>
-    </center>
+    </div>
   </body>
 </html>
