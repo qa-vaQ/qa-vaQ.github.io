@@ -1,38 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-       body {
-         background: linear-gradient(-45deg, #23d5ab, #32CD32, #23a6d5, #800080);
-	       background-size: 400% 400%;
-	       animation: gradient 15s ease infinite;
-       }
-
-       @keyframes gradient {
-	       0% {
-	        background-position: 0% 50%;
-         }
-				 50% {
-		       background-position: 100% 50%;
-	       }
-	       100% {
-	         background-position: 0% 50%;
-	       }
-       }
-       div.foreground {
-	       position: absolute;
-         left: 300px;
-	       right: 300px;
-	       top: -3px;
-	       bottom: -3px;
-         background-color: white;
-         border: 3px solid #000000;
-         padding: 10px; 
-       }
-    </style>  
-  </head>
-    <body class="container-fluid" onload="closeAlert()">
-      <div class="foreground">
-    </div>
-  </body>
+<head>
+	<style>
+		body {
+			background: linear-gradient(-45deg, #23d5ab, #32CD32, #23a6d5, #800080);
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+		  }
+		
+		@keyframes gradient {
+			0% {
+		  	background-position: 0% 50%;
+		  }
+			50% {
+				background-position: 100% 50%;
+			}
+	    100% {
+			  background-position: 0% 50%;
+			}
+		}
+		div.foreground {
+			position: absolute;
+		  left: 300px;
+      right: 300px;
+		  top: -3px;
+			bottom: -3px;
+		  background-color: white;
+		  border: 3px solid #000000;
+		  padding: 10px; 
+		}
+	</style>
+</head>
+<body class="container-fluid" onload="closeAlert()">
+	<div class="foreground"></div>
+</body>
 </html>
