@@ -588,26 +588,7 @@ Runner.prototype = {
       }
 
       // Night mode.
-      if (this.invertTimer > this.config.INVERT_FADE_DURATION) {
-        this.invertTimer = 0;
-        this.invertTrigger = false;
-        this.invert();
-      } else if (this.invertTimer) {
-        this.invertTimer += deltaTime;
-      } else {
-        var actualDistance =
-            this.distanceMeter.getActualDistance(Math.ceil(this.distanceRan));
-
-        if (actualDistance > 0) {
-          this.invertTrigger = !(actualDistance %
-              this.config.INVERT_DISTANCE);
-
-          if (this.invertTrigger && this.invertTimer === 0) {
-            this.invertTimer += deltaTime;
-            this.invert();
-          }
-        }
-      }
+      
     }
 
     if (this.playing || (!this.activated &&
