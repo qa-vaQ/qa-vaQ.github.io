@@ -588,7 +588,26 @@ Runner.prototype = {
       }
 
       // Night mode.
-      
+      if (this.invertTimer > this.config.INVERT_FADE_DURATION) {
+        this.invertTimer = 0;
+        this.invertTrigger = false;
+        this.invert();
+      } else if (this.invertTimer) {
+        this.invertTimer += deltaTime;
+      } else {
+        var actualDistance =
+            this.distanceMeter.getActualDistance(Math.ceil(this.distanceRan));
+
+        if (actualDistance > 0) {
+          this.invertTrigger = !(actualDistance %
+              this.config.INVERT_DISTANCE);
+
+          if (this.invertTrigger && this.invertTimer === 0) {
+            this.invertTimer += deltaTime;
+            this.invert();
+          }
+        }
+      }
     }
 
     if (this.playing || (!this.activated &&
@@ -1562,13 +1581,13 @@ function Trex(canvas, spritePos) {
  */
 Trex.config = {
   DROP_VELOCITY: -5,
-  GRAVITY: 0.0,
+  GRAVITY: 0.6,
   HEIGHT: 47,
   HEIGHT_DUCK: 25,
   INIITAL_JUMP_VELOCITY: -10,
   INTRO_DURATION: 1500,
-  MAX_JUMP_HEIGHT: 3300,
-  MIN_JUMP_HEIGHT: 3200,
+  MAX_JUMP_HEIGHT: 30,
+  MIN_JUMP_HEIGHT: 30,
   SPEED_DROP_COEFFICIENT: 3,
   SPRITE_WIDTH: 262,
   START_X_POS: 50,
