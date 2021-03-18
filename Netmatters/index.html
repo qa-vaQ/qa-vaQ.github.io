@@ -59,6 +59,10 @@
     border-bottom-style: hidden;
     border-top-style: hidden;
     }
+    div.settings {
+      id: "settings";
+      display: none;
+    }
     .container{
     $font-family-sans-serif:
     // Cross-platform generic font family (default user interface font)
@@ -117,7 +121,8 @@
     function tableopen() {
         document.getElementById("table1").style.display = "block";
     }
-    
+    function settingsopen() {
+        document.getElementById("settings").style.display = "block";
     function myCreateFunction() {
         var message = "";
     
@@ -347,7 +352,7 @@
               <th style = "text-align:center">Clear</th>
             </tr>
           </table>
-            <div id="table1" style="display: none;">
+            <div id="table" style="display: none;">
              <table class="table table-bordered table-responsive" id="chargeTimeTable" style="table-layout: fixed ; width: 100%;">
               <tr>
                  <th style = "text-align:center">Reg</th>
@@ -366,7 +371,8 @@
            </div>
         </div>
       </div>
-      <button onclick="tableopen()">Settings</button>
+      <button onclick="settingsopen()">Settings</button>
+      <div class="settings"><p>Menu</p></div>
     </center>
   </div>
 </body>
