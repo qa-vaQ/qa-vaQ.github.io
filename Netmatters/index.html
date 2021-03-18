@@ -60,7 +60,6 @@
     border-top-style: hidden;
     }
     div.settings {
-      id: "settings";
       display: none;
     }
     .container{
@@ -123,6 +122,7 @@
     }
     function settingsopen() {
         document.getElementById("settings").style.display = "block";
+    }
     function myCreateFunction() {
         var message = "";
     
@@ -372,7 +372,7 @@
         </div>
       </div>
       <button onclick="settingsopen()">Settings</button>
-      <div class="settings"><p>Menu</p></div>
+      <div class="settings" id="settings" style="display: none;"><p>Menu</p></div>
     </center>
   </div>
 </body>
