@@ -64,7 +64,12 @@
       border: 3px solid #6c757d;
       padding: 3px;
       border-radius: 5px;
+      max-width: 300px;
+      bottom: 45px;
     } 
+    div.settingslocation {
+      bottom: 5px;
+    }
     .container{
     $font-family-sans-serif:
     // Cross-platform generic font family (default user interface font)
@@ -380,11 +385,12 @@
            </div>
         </div>
       </div>
+      <div class="settingslocation">
       <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
       <div class="settings" id="settings" style="display: none;">
         <button onclick="tableopen()" class="one btn btn-outline-secondary">Table Open</button>
-        <button onclick="tableclose()" class="one btn btn-outline-secondary">Table Close</button>
-        <button onclick="settingsclose()" class="one btn btn-outline-secondary" style="right: 5px;"> X </button>
+        <button onclick="tableclose()" class="one btn btn-outline-secondary">Table Close</button><br><br>
+        <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
       </div>
     </center>
   </div>
