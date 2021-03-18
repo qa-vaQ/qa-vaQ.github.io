@@ -48,6 +48,9 @@
     p20 {
       opacity:0;
     }
+    #table1 {
+      display: none;
+    }
     div.foreground {
     position: absolute;
     left: 20%;
@@ -114,7 +117,9 @@
     ];
     var n = 0
     
-    
+    function tableopen() {
+        document.getElementById("table1").style.display = "block";
+    }
     
     function myCreateFunction() {
         var message = "";
@@ -362,6 +367,7 @@
           </table>
         </div>
       </div>
+      <button onclick="table1()">Settings</button>
     </center>
   </div>
 </body>
