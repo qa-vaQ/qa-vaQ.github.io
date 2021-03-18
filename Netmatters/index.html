@@ -61,6 +61,7 @@
     }
     div.settings {
       display: none;
+      border: 3px solid #000000;
     }
     .container{
     $font-family-sans-serif:
@@ -352,7 +353,7 @@
               <th style = "text-align:center">Clear</th>
             </tr>
           </table>
-            <div id="table" style="display: none;">
+            <div id="table1" style="display: none;">
              <table class="table table-bordered table-responsive" id="chargeTimeTable" style="table-layout: fixed ; width: 100%;">
               <tr>
                  <th style = "text-align:center">Reg</th>
@@ -372,7 +373,9 @@
         </div>
       </div>
       <button onclick="settingsopen()">Settings</button>
-      <div class="settings" id="settings" style="display: none;"><p>Menu</p></div>
+      <div class="settings" id="settings" style="display: none;">
+        <button onclick="tableopen()">Table Open</button>
+      </div>
     </center>
   </div>
 </body>
