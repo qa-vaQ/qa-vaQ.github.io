@@ -121,8 +121,14 @@
     function tableopen() {
         document.getElementById("table1").style.display = "block";
     }
+    function tableclose() {
+        document.getElementById("table1").style.display = "none";
+    }
     function settingsopen() {
         document.getElementById("settings").style.display = "block";
+    }
+    function settingsclose() {
+        document.getElementById("settings").style.display = "none";
     }
     function myCreateFunction() {
         var message = "";
@@ -372,9 +378,10 @@
            </div>
         </div>
       </div>
-      <button onclick="settingsopen()">Settings</button>
+      <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
       <div class="settings" id="settings" style="display: none;">
-        <button onclick="tableopen()">Table Open</button>
+        <button onclick="tableopen()" class="one btn btn-outline-secondary">Table Open</button>
+        <button onclick="tableclose()" class="one btn btn-outline-secondary">Table Close</button>
       </div>
     </center>
   </div>
