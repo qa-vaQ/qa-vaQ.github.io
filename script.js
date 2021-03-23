@@ -5,7 +5,7 @@ function setup() {
   setInterval(changeColor, 3000);
  }
  
- function changeColor() {
+function changeColor() {
   var body = document.body;
   body.style.backgroundColor = colors[counter];
   
@@ -15,5 +15,26 @@ function setup() {
     counter++;
   }
 }
-  
+function easteregg() {
+        var decider1 = document.getElementById('easteregg');
+        if(decider1.checked){
+            document.getElementById("body").style.transform = "rotate(180deg)";
+        } else {
+          document.getElementById("body").style.transform = "rotate(0deg)";
+        }
+    }
+function easteregg2() {
+        var decider2 = document.getElementById('easteregg2');
+        if(decider2.checked){
+            document.getElementById("body").style.filter = "invert(1)";
+        } else {
+          document.getElementById("body").style.filter = "invert(0)";
+        }
+    }
+function settingsopen() {
+        document.getElementById("settings").style.display = "block";
+    }
+function settingsclose() {
+        document.getElementById("settings").style.display = "none";
+    }
   
