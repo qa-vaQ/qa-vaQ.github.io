@@ -136,6 +136,15 @@ function settingsclose() {
           <iframe width="505px" height="260px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="505px" height="260px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
+        <div class="settingslocation">
+        <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
+          <div class="settings" id="settings" style="display: none;">
+            <input type="checkbox" id="tablebox" onclick="tableopen()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br>
+            <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg"> <p20>|</p20>Australia Mode</label><br>
+            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br><br>
+            <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
+          </div>
+      </div>
       </center>
     </div>
   </body>
