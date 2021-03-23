@@ -32,18 +32,42 @@
         font-size: 12px;
         color: black;
       }
-      div.foreground{
-        position: absolute;
-        left: 40px;
-        right: 40px;
-        top: 40px;
-        bottom: 40px;
-        background-color: white;
-        border: 3px solid #000000;
-        padding: 1px; 
-        border-radius: 25px;
-      }
-      .huerotate {-webkit-filter: hue-rotate(180deg);}
+      body {
+  overflow:hidden;
+  background-color: #00FFFF;
+  transition: all 3.0s linear;
+}
+div.foreground {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  background-color: white;
+  border: 3px solid #000000;
+  padding: 10px; 
+  min-height: 100%;
+  border-bottom-style: hidden;
+  border-top-style: hidden;
+  }
+div.settings {
+  position: absolute;
+  margin: 0 auto;
+  display: none;
+  border: 2px solid #6c757d;
+  background-color: white;
+  padding: 3px;
+  border-radius: 5px;
+  bottom: 45px;
+  width: 26%; 
+  right: 37%; 
+  left: 37%;
+  } 
+div.settingslocation {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 5px;
+  right: 1%; 
+  left: 1%
+}
     </style>
     <script>
       var counter = 0;
