@@ -146,6 +146,9 @@
     function settingsclose() {
         document.getElementById("settings").style.display = "none";
     }
+    function easteregg() {
+        document.getElementById("body").style.transform = "rotate(180deg)";
+    }
     function myCreateFunction() {
         var message = "";
     
@@ -315,7 +318,7 @@
   </script>
 </head>
 <body class="container-fluid" onload="closeAlert()">
-  <div class="foreground">
+  <div class="foreground" id="body" style="transform: rotate(0deg);">
     <center>
       <div class="row">
         <div class="col-sm">
