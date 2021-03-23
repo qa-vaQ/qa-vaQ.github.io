@@ -99,9 +99,9 @@ function easteregg() {
 function easteregg2() {
         var decider2 = document.getElementById('easteregg2');
         if(decider2.checked){
-            document.getElementById("mainbody").style.filter = "invert(1)";
+            document.getElementById("body").style.filter = "invert(1)";
         } else {
-          document.getElementById("mainbody").style.filter = "invert(0)";
+          document.getElementById("body").style.filter = "invert(0)";
         }
     }
 function settingsopen() {
@@ -112,7 +112,7 @@ function settingsclose() {
     }
   </script>
   </head>
-  <body onload="setup()" id="mainbody" style="filter: invert(0);">
+  <body onload="setup()">
     <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
       <center>
         <div class="date">Version 23.03.2021</div>
