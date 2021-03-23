@@ -149,6 +149,9 @@
     function easteregg() {
         document.getElementById("body").style.transform = "rotate(180deg)";
     }
+    function eastereggoff() {
+        document.getElementById("body").style.transform = "rotate(0deg)";
+    }
     function myCreateFunction() {
         var message = "";
     
@@ -401,8 +404,9 @@
         <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
           <div class="settings" id="settings" style="display: none;">
             <button onclick="tableopen()" class="one btn btn-outline-secondary">Table Open</button>
-            <button onclick="tableclose()" class="one btn btn-outline-secondary">Table Close</button>
-            <button onclick="easteregg()" class="one btn btn-outline-secondary">???</button><br><br>
+            <button onclick="tableclose()" class="one btn btn-outline-secondary">Table Close</button><br>
+            <button onclick="easteregg()" class="one btn btn-outline-secondary">Australia Vision On</button>
+            <button onclick="eastereggoff()" class="one btn btn-outline-secondary">Australia Vision Off</button><br><br>
             <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
           </div>
       </div>
