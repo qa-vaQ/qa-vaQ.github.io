@@ -71,21 +71,43 @@ div.settingslocation {
     </style>
     <script>
       var counter = 0;
-      var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
+var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
 
-      function setup() {
-        setInterval(changeColor, 3000);
-      }
+function setup() {
+  setInterval(changeColor, 3000);
+ }
  
-      function changeColor() {
-        var body = document.body;
-        body.style.backgroundColor = colors[counter];
+function changeColor() {
+  var body = document.body;
+  body.style.backgroundColor = colors[counter];
   
-        if(counter == 7) {
-         counter = 0;
+  if(counter == 6) {
+    counter = 0;
+  } else {
+    counter++;
+  }
+}
+function easteregg() {
+        var decider1 = document.getElementById('easteregg');
+        if(decider1.checked){
+            document.getElementById("body").style.transform = "rotate(180deg)";
         } else {
-          counter++;
-      }
+          document.getElementById("body").style.transform = "rotate(0deg)";
+        }
+    }
+function easteregg2() {
+        var decider2 = document.getElementById('easteregg2');
+        if(decider2.checked){
+            document.getElementById("body").style.filter = "invert(1)";
+        } else {
+          document.getElementById("body").style.filter = "invert(0)";
+        }
+    }
+function settingsopen() {
+        document.getElementById("settings").style.display = "block";
+    }
+function settingsclose() {
+        document.getElementById("settings").style.display = "none";
     }
   </script>
   </head>
@@ -106,7 +128,7 @@ div.settingslocation {
         </p>
         <p>
           <img src="Images/ezgif-4-71cab7d62f71.gif" alt="fucking boris" style="width:220px;height:220px;">
-          <img src="Images/utcn-logo.png" alt="UTCN" style="width:700px;height:175px;" class="huerotate">
+          <img src="Images/utcn-logo.png" alt="UTCN" style="width:500px;height:100px;">
           <img src="Images/FirmHarmoniousDromedary-size_restricted.gif" alt="fan" style="width:200px;height:200px;">
         </p>    
         <p>
