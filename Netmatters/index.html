@@ -45,14 +45,6 @@
         background-position: 0% 50%;
       }
     }
-    @keyframes spin {
-      from {
-        transform:rotate(0deg);
-      }
-      to {
-        transform:rotate(360deg);
-      }
-    }
     p20 {
       opacity:0;
     }
@@ -164,14 +156,6 @@
             document.getElementById("body").style.filter = "invert(1)";
         } else {
           document.getElementById("body").style.filter = "invert(0)";
-        }
-    }
-    function easteregg3() {
-        var decider3 = document.getElementById('easteregg3');
-        if(decider3.checked){
-            document.getElementById("body").style.animation = "spin";
-        } else {
-          document.getElementById("body").style.animation = "none";
         }
     }
     function settingsopen() {
@@ -433,8 +417,7 @@
           <div class="settings" id="settings" style="display: none;">
             <input type="checkbox" id="tablebox" onclick="tableopen()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br>
             <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg"> <p20>|</p20>Australia Mode</label><br>
-            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br>
-            <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3"> <p20>|</p20>Spin</label><br><br>
+            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br><br>
             <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
           </div>
       </div>
