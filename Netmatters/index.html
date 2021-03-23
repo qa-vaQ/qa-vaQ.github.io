@@ -142,20 +142,19 @@
           document.getElementById("table1").style.display = "none";
         }
     }
-    function tableclose() {
-        document.getElementById("table1").style.display = "none";
+    function easteregg() {
+        var decider1 = document.getElementById('easteregg');
+        if(decider1.checked){
+            document.getElementById("body").style.transform = "rotate(180deg)";
+        } else {
+          document.getElementById("body").style.transform = "rotate(0deg)";
+        }
     }
     function settingsopen() {
         document.getElementById("settings").style.display = "block";
     }
     function settingsclose() {
         document.getElementById("settings").style.display = "none";
-    }
-    function easteregg() {
-        document.getElementById("body").style.transform = "rotate(180deg)";
-    }
-    function eastereggoff() {
-        document.getElementById("body").style.transform = "rotate(0deg)";
     }
     function myCreateFunction() {
         var message = "";
@@ -409,6 +408,7 @@
         <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
           <div class="settings" id="settings" style="display: none;">
             <input type="checkbox" id="tablebox" onclick="tableopen()">
+            <input type="checkbox" id="easteregg" onclick="tableopen()">
             <button onclick="tableopen()" class="one btn btn-outline-secondary">Table Open</button>
             <button onclick="tableclose()" class="one btn btn-outline-secondary">Table Close</button><br>
             <button onclick="easteregg()" class="one btn btn-outline-secondary">Australia Vision On</button>
