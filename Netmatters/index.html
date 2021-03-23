@@ -166,6 +166,14 @@
           document.getElementById("body").style.filter = "invert(0)";
         }
     }
+    function easteregg3() {
+        var decider3 = document.getElementById('easteregg3');
+        if(decider3.checked){
+            document.getElementById("body").style.animation-name = "spin";
+        } else {
+          document.getElementById("body").style.animation-name = "none";
+        }
+    }
     function settingsopen() {
         document.getElementById("settings").style.display = "block";
     }
@@ -341,7 +349,7 @@
   </script>
 </head>
 <body class="container-fluid" onload="closeAlert()">
-  <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
+  <div class="foreground" id="body" style="transform: rotate(0deg);" style="animation-name: none;" style="animation-duration: 3000ms;" style="filter: invert(0);">
     <center>
       <div class="row">
         <div class="col-sm">
@@ -425,7 +433,8 @@
           <div class="settings" id="settings" style="display: none;">
             <input type="checkbox" id="tablebox" onclick="tableopen()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br>
             <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg"> <p20>|</p20>Australia Mode</label><br>
-            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br><br>
+            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br>
+            <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3"> <p20>|</p20>Spin</label><br><br>
             <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
           </div>
       </div>
