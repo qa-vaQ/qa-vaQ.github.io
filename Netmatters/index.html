@@ -153,9 +153,9 @@
     function easteregg2() {
         var decider2 = document.getElementById('easteregg2');
         if(decider2.checked){
-            document.getElementById("body").style.filter = "invert(1);";
+            document.getElementById("body").style.filter = "invert(1)";
         } else {
-          document.getElementById("body").style.filter = "invert(0);";
+          document.getElementById("body").style.filter = "invert(0)";
         }
     }
     function settingsopen() {
@@ -333,7 +333,7 @@
   </script>
 </head>
 <body class="container-fluid" onload="closeAlert()">
-  <div class="foreground" id="body" style="transform: rotate(0deg); filter: invert(0);">
+  <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
     <center>
       <div class="row">
         <div class="col-sm">
