@@ -44,7 +44,7 @@
         background-color: white;
         border: 3px solid #000000;
         padding: 10px; 
-        top: -1%;
+        top: -1px;
         min-height: 100%;
         border-bottom-style: hidden;
         border-top-style: hidden;
@@ -65,7 +65,7 @@
       div.settingslocation {
         margin: 0 auto;
         position: absolute;
-        bottom: 5px;
+        bottom: 10px;
         right: 1%; 
         left: 1%
       }
@@ -113,7 +113,7 @@ function settingsclose() {
   </script>
   </head>
   <body onload="setup()">
-    <div class="foreground">
+    <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
       <center>
         <div class="date">Version 17.03.2021</div>
         <h1>This is a website, Don't catch you slippin' up </h1>
@@ -133,14 +133,13 @@ function settingsclose() {
           <img src="Images/FirmHarmoniousDromedary-size_restricted.gif" alt="fan" style="width:200px;height:200px;">
         </p>    
         <p>
-          <iframe width="333px" height="260px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          <iframe width="333px" height="260px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="333px" height="260px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="370px" height="260px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+          <iframe width="370px" height="260px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="370px" height="260px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
         <div class="settingslocation">
         <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
           <div class="settings" id="settings" style="display: none;">
-            <input type="checkbox" id="tablebox" onclick="tableopen()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br>
             <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg"> <p20>|</p20>Australia Mode</label><br>
             <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br><br>
             <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
