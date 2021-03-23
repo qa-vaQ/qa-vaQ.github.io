@@ -150,6 +150,14 @@
           document.getElementById("body").style.transform = "rotate(0deg)";
         }
     }
+    function easteregg2() {
+        var decider2 = document.getElementById('easteregg2');
+        if(decider2.checked){
+            document.getElementById("body").style.filter = "invert(1);";
+        } else {
+          document.getElementById("body").style.filter = "invert(0);";
+        }
+    }
     function settingsopen() {
         document.getElementById("settings").style.display = "block";
     }
@@ -325,7 +333,7 @@
   </script>
 </head>
 <body class="container-fluid" onload="closeAlert()">
-  <div class="foreground" id="body" style="transform: rotate(0deg);">
+  <div class="foreground" id="body" style="transform: rotate(0deg); filter: invert(0);">
     <center>
       <div class="row">
         <div class="col-sm">
@@ -408,7 +416,8 @@
         <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
           <div class="settings" id="settings" style="display: none;">
             <input type="checkbox" id="tablebox" onclick="tableopen()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br>
-            <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg"> <p20>|</p20>Australia Mode</label><br><br>
+            <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg"> <p20>|</p20>Australia Mode</label><br>
+            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br><br>
             <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
           </div>
       </div>
