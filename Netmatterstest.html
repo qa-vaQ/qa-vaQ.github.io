@@ -126,13 +126,16 @@
         if (timeDif <= 0) {
             message = message + "You need to leave after you arrive. ";
         }
+        if (hoursN > leaveTime - arriveTime) {
+          message = message + "Car doesn't have enough time to be charged. "
+        }
         if (message != "") {
           document.getElementById("myAlert").style.display = "block";
           document.getElementById("myAlertLabel").innerHTML = message;
         }
         // end of validation
     
-        if (n < 6  && milesR != "" && milesN != "" && timeDif > 0 && buffer > milesR) {
+        if (n < 6  && milesR != "" && milesN != "" && timeDif > 0 && buffer > milesR && hoursN < leaveTime - arriveTime) {
             
             var table = document.getElementById("table");
             closeAlert()
