@@ -199,64 +199,102 @@
       n = n - 1
       }
         
-    function calculate() {
-      var times = [
-        [7, 40],
-        [8, 50],
-        [9, 60],
-        [10, 70],
-        [11, 80],
-        [12, 70],
-        [13, 70],
-        [14, 60],
-        [15, 50],
-        [16, 40]
-    ]
-      var reg = [numbers[0][0],numbers[1][0],numbers[2][0],numbers[3][0],numbers[4][0],numbers[5][0]];
-      var hoursN = [numbers[0][1],numbers[1][1],numbers[2][1],numbers[3][1],numbers[4][1],numbers[5][1]];
-      var arriveTime = [numbers[0][2],numbers[1][2],numbers[2][2],numbers[3][2],numbers[4][2],numbers[5][2]];
-      var leaveTime = [numbers[0][3],numbers[1][3],numbers[2][3],numbers[3][3],numbers[4][3],numbers[5][3]];
-      var hoursDif = [[(leaveTime[0]-arriveTime[0])-hoursN[0],0],[(leaveTime[1]-arriveTime[1])-hoursN[1],1],[(leaveTime[2]-arriveTime[2])-hoursN[2],2],[(leaveTime[3]-arriveTime[3])-hoursN[3],3],[(leaveTime[4]-arriveTime[4])-hoursN[4],4],[(leaveTime[5]-arriveTime[5])-hoursN[5],5]];
-      hoursDif.sort()
-      var time = 0;
-      var x = 0;
-      var y = 0;
-      var temp = []
-      while (time == 0) {
-        if (arriveTime[x]-7 == time) {
-          temp.push(hoursDif[x][1]);
-        }
-        x += 1;
-        var maxCars = Math.floor(times[time][1]/11);
-        if (x > 6) {
-          if (temp.length <= maxCars) {
-            x = 0
-            while (x < maxCars) {
-              document.getElementById("chargeTimeTable").rows[hoursDif[x][1]+1].cells[time+1].style.backgroundColor = "green";
-              x += 1;
-            }
-          }
-        else{
-          x = 0
-          while (x <= maxCars){
-            while (y < temp.length){
-              if (temp[y] == hoursDif[0]){
-                var containCheck = True;
-              }
-              y += 1;
-            }
-            if (containCheck == true) {
-             document.getElementById("show").innerHTML = tempment.getElementById("chargeTimeTable").rows[hoursDif[x][1]+1].cells[time+1].style.backgroundColor = "green";
-            }
-            x += 1
-          }
-          
-        }
-          time += 1;
-        }
-      }
-      
+  function calculate() {
+    var chargeSchedule = document.getElementById("chargeScheduleBody");
+    chargeSchedule.deleteRow(-1);
+    chargeSchedule.deleteRow(-1);
+    chargeSchedule.deleteRow(-1);
+    chargeSchedule.deleteRow(-1);
+    chargeSchedule.deleteRow(-1);
+    chargeSchedule.deleteRow(-1);
+    document.getElementById("chargeScheduleDiv").style.display = "block"
+    var times = [
+      [7, 40],
+      [8, 50],
+      [9, 60],
+      [10, 70],
+      [11, 80],
+      [12, 70],
+      [13, 70],
+      [14, 60],
+      [15, 50],
+      [16, 40]
+  ]
+    var reg = [numbers[0][0],numbers[1][0],numbers[2][0],numbers[3][0],numbers[4][0],numbers[5][0]];
+    var hoursN = [numbers[0][1],numbers[1][1],numbers[2][1],numbers[3][1],numbers[4][1],numbers[5][1]];
+    var arriveTime = [numbers[0][2],numbers[1][2],numbers[2][2],numbers[3][2],numbers[4][2],numbers[5][2]];
+    var leaveTime = [numbers[0][3],numbers[1][3],numbers[2][3],numbers[3][3],numbers[4][3],numbers[5][3]];
+    var hoursDif = [[(leaveTime[0]-arriveTime[0])-hoursN[0],0],[(leaveTime[1]-arriveTime[1])-hoursN[1],1],[(leaveTime[2]-arriveTime[2])-hoursN[2],2],[(leaveTime[3]-arriveTime[3])-hoursN[3],3],[(leaveTime[4]-arriveTime[4])-hoursN[4],4],[(leaveTime[5]-arriveTime[5])-hoursN[5],5]];
+    hoursDif.sort()
+    var time = 0;
+    var y = 0;
+    var x = 0;
+    while (x < 6){
+      var scheduleRow = chargeSchedule.insertRow(-1);
+      var chargeCell0 = scheduleRow.insertCell(0);
+      chargeCell0.innerHTML = reg[x];
+      var chargeCell1 = scheduleRow.insertCell(1);
+      var chargeCell2 = scheduleRow.insertCell(2);
+      var chargeCell3 = scheduleRow.insertCell(3);
+      var chargeCell4 = scheduleRow.insertCell(4);
+      var chargeCell5 = scheduleRow.insertCell(5);
+      var chargeCell6 = scheduleRow.insertCell(6);
+      var chargeCell7 = scheduleRow.insertCell(7);
+      var chargeCell8 = scheduleRow.insertCell(8);
+      var chargeCell9 = scheduleRow.insertCell(9);
+      var chargeCell10 = scheduleRow.insertCell(10);
+      x += 1
     }
+    var x = 0;
+    var c = 0;
+    var chargeTimes = [0,0,0,0,0,0,0,0,0,0]
+    while (x < 6) {
+      time = 0
+      var tempHoursN = hoursN[hoursDif[x][1]];
+      c = 0
+      y = 0
+      while (tempHoursN > 0) {
+        while (time <= 9) {
+          var maxCars = Math.floor(times[time][1]/11);
+          var tempMaxCars = Math.floor(times[((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y)][1]/11)
+          console.log(tempMaxCars)
+          var fixAttempt = Number(arriveTime[hoursDif[x][1]]-7) + Number(hoursN[hoursDif[x][1]]);
+          if (arriveTime[hoursDif[x][1]]-7 <= time && fixAttempt > time) {
+            if (chargeTimes[time] < maxCars) {
+              document.getElementById("chargeSchedule").rows[hoursDif[x][1]+1].cells[(arriveTime[hoursDif[x][1]]-7)+c+1].style.backgroundColor = "green";
+            } 
+            else {
+              while (true) {
+                if (chargeTimes[((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y)] < tempMaxCars) {
+
+                  if ((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y < (leaveTime[hoursDif[x][1]])-7) {
+                    document.getElementById("chargeSchedule").rows[hoursDif[x][1]+1].cells[(arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y+1].style.backgroundColor = "green";
+                    y += 1
+                    break;
+                  }
+                  else {
+                    document.getElementById("chargeSchedule").rows[hoursDif[x][1]+1].cells[(arriveTime[hoursDif[x][1]]-7)+c+1].style.backgroundColor = "red";
+                    break;
+                  }
+                }
+                y += 1
+                tempMaxCars = Math.floor(times[((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y)][1]/11);
+
+              }
+            }
+            chargeTimes[time] += 1;
+            c += 1;
+
+          }
+
+        tempHoursN -= 1
+        time += 1
+        }
+
+      }
+      x += 1;
+    }
+  }
   </script>
 </head>
 <body class="container-fluid" onload="closeAlert()">
