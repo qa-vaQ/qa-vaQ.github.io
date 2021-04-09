@@ -192,6 +192,10 @@
     function closeAlert() {
             document.getElementById("myAlert").style.display = "none";
           }
+    function hideAll(){
+      document.getElementById("myAlert").style.display = "none";
+      document.getElementById("chargeScheduleDiv").style.display = "none";
+    }
     function myDeleteFunction(x) {
       var clearRow = x.parentNode.parentNode.rowIndex
       document.getElementById("table").deleteRow(clearRow)
@@ -300,7 +304,7 @@
   }
   </script>
 </head>
-<body class="container-fluid" onload="closeAlert()">
+<body class="container-fluid" onload="hideAll()">
   <div class="foreground">
     <center>
       <div class="row">
@@ -385,6 +389,27 @@
               <th style = "text-align:center">16-17</th>
             </tr>
           </table>
+          <div id = "chargeScheduleDiv">
+          <table class="table table-bordered table-responsive" id="chargeSchedule" style="table-layout: fixed ; width: 100%;">
+            <thead>
+              <tr>
+                <th style = "text-align:center">Reg</th>
+                <th style = "text-align:center">7-8</th>
+                <th style = "text-align:center">8-9</th>
+                <th style = "text-align:center">9-10</th>
+                <th style = "text-align:center">10-11</th>
+                <th style = "text-align:center">11-12</th>
+                <th style = "text-align:center">12-13</th>
+                <th style = "text-align:center">13-14</th>
+                <th style = "text-align:center">14-15</th>
+                <th style = "text-align:center">15-16</th>
+                <th style = "text-align:center">16-17</th>
+              </tr>
+            </thead>
+            <tbody id = "chargeScheduleBody">
+            </tbody>
+          </table>
+          </div>
         </div>
       </div>
     </center>
