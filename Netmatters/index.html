@@ -211,7 +211,7 @@
         }
         // end of validation
     
-        if (n < 6  && milesR != "" && milesN != "" && timeDif > 0 && buffer > milesR && hoursN < leaveTime-arriveTime && regResult == true) {
+        if (n < 6  && milesR != "" && milesN != "" && timeDif > 0 && buffer > milesR && hoursN < leaveTime-arriveTime && regResult == true && buffer <= 250) {
         
         var table = document.getElementById("table");
         closeAlert()
