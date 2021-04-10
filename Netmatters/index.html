@@ -199,13 +199,16 @@
         if (timeDif <= 0) {
             message = message + "You need to leave after you arrive. ";
         }
+        if (hoursN > leaveTime - arriveTime) {
+          message = message + "This car doesn't have enough time to charge. "
+        }
         if (message != "") {
           document.getElementById("myAlert").style.display = "block";
           document.getElementById("myAlertLabel").innerHTML = message;
         }
         // end of validation
     
-        if (n < 6  && milesR != "" && milesN != "" && timeDif > 0 && buffer > milesR && hoursN < leaveTime-arriveTime) {
+        if (n < 6  && milesR != "" && milesN != "" && timeDif > 0 && buffer > milesR && hoursN < leaveTime-arriveTime && regResult == true) {
         
         var table = document.getElementById("table");
         closeAlert()
@@ -374,7 +377,7 @@ function calculate() {
 }
   </script>
 </head>
-<body class="container-fluid" onload="closeAlert()">
+<body class="container-fluid" onload="hideAll()">
   <div class="foreground" id="body" style="transform: rotate(0deg);" style="animation-name: none;" style="animation-duration: 3000ms;" style="filter: invert(0);">
     <center>
       <div class="row">
