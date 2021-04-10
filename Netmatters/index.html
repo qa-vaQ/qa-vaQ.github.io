@@ -377,6 +377,15 @@ function calculate() {
     }
     x += 1;
   }
+    var count = 0
+    var d = 1
+    while (count < 5) {
+      if (reg[reg.length-d] == undefined) {
+        chargeSchedule.deleteRow(reg.length-d);
+      }
+      count += 1
+      d += 1
+    }
 }
   </script>
 </head>
