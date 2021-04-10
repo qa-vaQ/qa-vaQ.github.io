@@ -202,6 +202,9 @@
         if (hoursN > leaveTime - arriveTime) {
           message = message + "This car doesn't have enough time to charge. "
         }
+        if (buffer > 250) {
+          message = message + "The maximum range is 250. "
+        }
         if (message != "") {
           document.getElementById("myAlert").style.display = "block";
           document.getElementById("myAlertLabel").innerHTML = message;
