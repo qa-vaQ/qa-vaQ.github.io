@@ -48,6 +48,7 @@
         min-height: 100%;
         border-bottom-style: hidden;
         border-top-style: hidden;
+        transition: all 5.0s linear;
       }
       div.settings {
         position: absolute;
@@ -108,9 +109,9 @@ function easteregg2() {
 function easteregg3() {
         var decider3 = document.getElementById('easteregg3');
         if(decider3.checked){
-            document.getElementById("body").style.filter = "rotate(360deg)";
+            document.getElementById("body").style.transform = "rotate(360deg)";
         } else {
-          document.getElementById("body").style.filter = "rotate(0deg)";
+          document.getElementById("body").style.transform = "rotate(0deg)";
         }
     }
 function settingsopen() {
