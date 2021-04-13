@@ -53,14 +53,15 @@
         position: absolute;
         margin: 0 auto;
         display: none;
-        border: 2px solid #6c757d;
+        border: 2px solid #000000;
         background-color: white;
         padding: 3px;
         border-radius: 5px;
-        bottom: 45px;
+        bottom: 30px;
         width: 26%; 
         right: 37%; 
         left: 37%;
+        font-family: "Comic Sans MS", cursive, sans-serif;
       } 
       div.settingslocation {
         margin: 0 auto;
@@ -138,7 +139,7 @@ function settingsclose() {
           <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
         <div class="settingslocation">
-        <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
+        <button onclick="settingsopen()" style="font-family: "Comic Sans MS", cursive, sans-serif;">Settings</button>
           <div class="settings" id="settings" style="display: none;">
             <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
             <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br><br>
