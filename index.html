@@ -8,7 +8,6 @@
         overflow:hidden;
         background-color: #00FFFF;
         transition: all 3.0s linear;
-        transform: rotate(0deg);
       }
       p {
         font-family: "Comic Sans MS", cursive, sans-serif;
@@ -108,10 +107,10 @@ function easteregg2() {
     }
 function easteregg3() {
         var decider3 = document.getElementById('easteregg3');
-        if(decider2.checked){
-            document.getElementById("mainbody").style.filter = "rotate(360deg)";
+        if(decider3.checked){
+            document.getElementById("body").style.filter = "rotate(360deg)";
         } else {
-          document.getElementById("mainbody").style.filter = "rotate(0deg)";
+          document.getElementById("body").style.filter = "rotate(0deg)";
         }
     }
 function settingsopen() {
@@ -122,7 +121,7 @@ function settingsclose() {
     }
   </script>
   </head>
-  <body onload="setup()" id="mainbody">
+  <body onload="setup()">
     <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
       <center>
         <div class="date">Version 13.04.2021</div>
