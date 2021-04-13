@@ -32,11 +32,6 @@
         font-size: 12px;
         color: black;
       }
-      body {
-        overflow:hidden;
-        background-color: #00FFFF;
-        transition: all 3.0s linear;
-      }
       div.foreground {
         position: absolute;
         left: 20%;
@@ -48,7 +43,7 @@
         min-height: 100%;
         border-bottom-style: hidden;
         border-top-style: hidden;
-        transition: all 5.0s linear;
+        transition: all 0.0s linear;
       }
       div.settings {
         position: absolute;
@@ -86,7 +81,7 @@ function changeColor() {
 function easteregg() {
         var decider1 = document.getElementById('easteregg');
         if(decider1.checked){
-            document.getElementById("body").style.transform = "rotate(180deg)";
+          document.getElementById("body").style.transform = "rotate(180deg)";
         } else {
           document.getElementById("body").style.transform = "rotate(0deg)";
         }
@@ -102,8 +97,10 @@ function easteregg2() {
 function easteregg3() {
         var decider3 = document.getElementById('easteregg3');
         if(decider3.checked){
-            document.getElementById("body").style.transform = "rotate(360deg)";
+          document.getElementById("body").style.transition = "all 5.0s linear;";    
+          document.getElementById("body").style.transform = "rotate(360deg)";
         } else {
+          document.getElementById("body").style.transition = "all 0.0s linear;";   
           document.getElementById("body").style.transform = "rotate(0deg)";
         }
     }
