@@ -58,19 +58,12 @@
         background-color: white;
         padding: 3px;
         border-radius: 5px;
-        bottom: 30px;
+        bottom: 50%;
         width: 26%; 
         right: 37%; 
         left: 37%;
         font-family: "Comic Sans MS", cursive, sans-serif;
       } 
-      div.settingslocation {
-        margin: 0 auto;
-        position: absolute;
-        bottom: 25px;
-        right: 1%; 
-        left: 1%
-      }
     </style>
     <script>
       var counter = 0;
@@ -187,6 +180,8 @@ document.addEventListener('keydown', function(e) {
           <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
         <div class="settings" id="settings" style="display: none;">
+          <p style:"font-size:14px"><b>Cheats Enabled</b></p><br>
+          <p>Available Cheats Listed:</p><br>
           <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
           <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br>
           <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3">Spin</label><br><br>
