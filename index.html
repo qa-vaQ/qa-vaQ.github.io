@@ -98,22 +98,21 @@ function easteregg3() {
         var decider3 = document.getElementById('easteregg3');
         if(decider3.checked){
           var count1 = 0;
-          setInterval(count1, 50); 
-          if(count1 == 1) {
-            counter = 0;
-            rotate();
-          } else {
-            count1++;
-          }
-          document.getElementById("body").style.transform = "rotate(360deg)";
+          setInterval(rotate, 50); 
+          document.getElementById("body").style.transition = "all 5.0s linear;";    
         } else {
           document.getElementById("body").style.transition = "all 0.0s linear;";   
           document.getElementById("body").style.transform = "rotate(0deg)";
         }
     }
 function rotate() {
-        document.getElementById("body").style.transition = "all 5.0s linear;";
-    }
+    if(count1 == 1) {
+      document.getElementById("body").style.transform = "rotate(360deg)";     
+      count1 = 0;
+    } else {
+      count1++;
+    }    
+}
 function settingsopen() {
         document.getElementById("settings").style.display = "block";
     }
