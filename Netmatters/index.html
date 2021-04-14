@@ -48,6 +48,14 @@
     p20 {
       opacity:0;
     }
+    @keyframes spin {
+        from {
+          transform:rotate(0deg);
+        }
+        to {
+          transform:rotate(360deg);
+        }
+      }
     .dot {
       height: 15px;
       width: 15px;
@@ -72,6 +80,21 @@
       min-height: 100%;
       border-bottom-style: hidden;
       border-top-style: hidden;
+    }
+    div.foregroundspin {  
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      background-color: white;
+      border: 3px solid #000000;
+      padding: 10px; 
+      min-height: 100%;
+      border-bottom-style: hidden;
+      border-top-style: hidden;
+      animation-name: spin;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
     }
     div.settings {
       position: absolute;
@@ -170,6 +193,14 @@
             document.getElementById("body").style.filter = "invert(1)";
         } else {
           document.getElementById("body").style.filter = "invert(0)";
+        }
+    }
+    function easteregg3() {
+        var decider3 = document.getElementById('easteregg3');
+        if(decider3.checked){
+          document.getElementById("body").className = "foregroundspin";
+        } else if {
+          document.getElementById("body").className = "foreground";
         }
     }
     function settingsopen() {
@@ -513,7 +544,8 @@ function calculate() {
           <div class="settings" id="settings" style="display: none;">
             <input type="checkbox" id="tablebox" onclick="tableopen()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br>
             <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg"> <p20>|</p20>Australia Mode</label><br>
-            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br><br>
+            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2"> <p20>|</p20>Colour Invert</label><br>
+            <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3"> <p20>|</p20>Spin</label><br>
             <button onclick="settingsclose()" class="one btn btn-outline-secondary"> X </button>
           </div>
       </div>
