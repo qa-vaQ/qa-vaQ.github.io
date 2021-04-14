@@ -43,7 +43,6 @@
         min-height: 100%;
         border-bottom-style: hidden;
         border-top-style: hidden;
-        transition: all 0.0s linear;
       }
       div.settings {
         position: absolute;
@@ -94,22 +93,13 @@ function easteregg2() {
           document.getElementById("body").style.filter = "invert(0)";
         }
     }
-var count1 = 0;
 function easteregg3() {
         var decider3 = document.getElementById('easteregg3');
         if(decider3.checked){
-          document.getElementById("body").style.transition = "all 5.0s linear;";    
-          setInterval(rotate, 1000);     
+          document.getElementById("rotate").style.transform = "rotate(360deg)";
         } else {
-          document.getElementById("body").style.transition = "all 0.0s linear;";   
-          document.getElementById("body").style.transform = "rotate(0deg)";
+          document.getElementById("rotate").style.transform = "rotate(0deg)";
         }
-    }
-function rotate() {
-    if(count1 == 1) {
-      document.getElementById("body").style.transform = "rotate(360deg)";     
-      count1 = 0;
-    }    
 }
 function settingsopen() {
         document.getElementById("settings").style.display = "block";
@@ -159,40 +149,42 @@ document.addEventListener('keydown', function(e) {
   </script>
   </head>
   <body onload="setup()">
-    <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
-      <center>
-        <div class="date">Version 13.04.2021</div>
-        <h1>This is a website, Don't catch you slippin' up </h1>
-        <p>Made by qa'vaQ and has no real purpose other than to place games that I can play while at school, usually when bored out of my mind.<br><b> Games : </b><br><b style="font-size:12px">(Pages under renovation, still operational)</b><br>
-        <b><a href="pacman.html">Pacman</a><br>
-        <a href="dino-master/index.html">Google Jump Dino</a><br>
-        <a href="snake.html">Snake</a><br>
-        <a href="https://duckhuntjs.com">Duck Hunt</a><br>
-        <a href="floppybird/index.html">Flappy Bird</a><br>
-        <a href="pong/game.html">Pong</a><br>
-        <a href="MarioCode/index.html">Mario</a><br>
-        <a href="important.html">???</a></b>
-        </p>
-        <p>
-          <img src="Images/ezgif-4-71cab7d62f71.gif" alt="fucking boris" style="width:20%; height:20%;">
-          <img src="Images/utcn-logo.png" alt="UTCN" style="width:61%; height:10%;">
-          <img src="Images/FirmHarmoniousDromedary-size_restricted.gif" alt="fan" style="width:17%; height:17%;">
-        </p>    
-        <p>
-          <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </p>
-        <button onclick="rotate()">Kill me</button>
-        <div class="settings" id="settings" style="display: none;">
-          <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p><br>
-          <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
-          <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br>
-          <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3">Spin</label><br><br>
-          <button onclick="settingsclose()" style="font-family: Comic Sans MS, cursive, sans-serif;"><b> X </b></button>
-        </div>
-      </center>
-    </div>
+    <div style="transition: all 5.0s linear; transform: rotate(0deg);" id="rotate">
+      <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
+        <center>
+          <div class="date">Version 13.04.2021</div>
+          <h1>This is a website, Don't catch you slippin' up </h1>
+          <p>Made by qa'vaQ and has no real purpose other than to place games that I can play while at school, usually when bored out of my mind.<br><b> Games : </b><br><b style="font-size:12px">(Pages under renovation, still operational)</b><br>
+          <b><a href="pacman.html">Pacman</a><br>
+          <a href="dino-master/index.html">Google Jump Dino</a><br>
+          <a href="snake.html">Snake</a><br>
+          <a href="https://duckhuntjs.com">Duck Hunt</a><br>
+          <a href="floppybird/index.html">Flappy Bird</a><br>
+          <a href="pong/game.html">Pong</a><br>
+          <a href="MarioCode/index.html">Mario</a><br>
+          <a href="important.html">???</a></b>
+          </p>
+          <p>
+            <img src="Images/ezgif-4-71cab7d62f71.gif" alt="fucking boris" style="width:20%; height:20%;">
+            <img src="Images/utcn-logo.png" alt="UTCN" style="width:61%; height:10%;">
+            <img src="Images/FirmHarmoniousDromedary-size_restricted.gif" alt="fan" style="width:17%; height:17%;">
+          </p>    
+          <p>
+            <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="32.6%" height="270px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+          <button onclick="rotate()">Kill me</button>
+          <div class="settings" id="settings" style="display: none;">
+            <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p><br>
+            <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
+            <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br>
+            <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3">Spin</label><br><br>
+            <button onclick="settingsclose()" style="font-family: Comic Sans MS, cursive, sans-serif;"><b> X </b></button>
+          </div>
+        </center>
+      </div>
+    </div>  
   </body>
 </html>
 <!-- Nice Code, Isnt it! ツ --!>
