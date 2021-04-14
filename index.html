@@ -120,9 +120,9 @@ function easteregg2() {
 function easteregg3() {
         var decider3 = document.getElementById('easteregg3');
         if(decider3.checked){
-          document.getElementById("rotate").style.transform = "rotate(360deg)";
+          document.getElementById("body").className = "foregroundspin";
         } else {
-          document.getElementById("rotate").style.transform = "rotate(0deg)";
+          document.getElementById("body").className = "foreground";
         }
 }
 function settingsopen() {
