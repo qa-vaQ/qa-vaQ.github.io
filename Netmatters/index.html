@@ -313,6 +313,7 @@
 function hideAll(){
   document.getElementById("myAlert").style.display = "none";
   document.getElementById("chargeScheduleDiv").style.display = "none";
+  document.getElementById("settingslocation").style.display = "none";
 }
 function closeAlert() {
         document.getElementById("myAlert").style.display = "none";
@@ -542,7 +543,7 @@ function calculate() {
         </p>
         </div>
       </div><br>
-      <div class="settingslocation" style.display="none">
+      <div class="settingslocation" id="settingslocation">
         <button onclick="settingsopen()" class="one btn btn-outline-secondary">Settings</button>
           <div class="settings" id="settings" style="display: none;">
             <input type="checkbox" id="tablebox" onclick="tableopen()"><label for="tablebox"> <p20>|</p20>Table Open/Shut</label><br>
