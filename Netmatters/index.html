@@ -406,8 +406,9 @@ function calculate() {
                 }
               }
               y += 1
-              tempMaxCars = Math.floor(times[((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y)][1]/11);
-              
+              if(((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y) < 10) {
+                tempMaxCars = Math.floor(times[((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y)][1]/11);
+              }
             }
           }
           chargeTimes[time] += 1;
