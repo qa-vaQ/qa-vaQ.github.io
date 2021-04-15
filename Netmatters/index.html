@@ -384,7 +384,9 @@ function calculate() {
     while (tempHoursN > 0) {
       while (time <= 9) {
         var maxCars = Math.floor(times[time][1]/11);
-        var tempMaxCars = Math.floor(times[((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y)][1]/11)
+        if(((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y) < 10) {
+          var tempMaxCars = Math.floor(times[((arriveTime[hoursDif[x][1]]-7)+Math.ceil(hoursN[hoursDif[x][1]])+y)][1]/11)
+        }
         console.log(tempMaxCars)
         var fixAttempt = Number(arriveTime[hoursDif[x][1]]-7) + Number(hoursN[hoursDif[x][1]]);
         if (arriveTime[hoursDif[x][1]]-7 <= time && fixAttempt > time) {
