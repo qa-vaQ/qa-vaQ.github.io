@@ -72,6 +72,30 @@
           transform:rotate(360deg);
         }
       }
+      div.foregroundspin1 {  
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        background-color: white;
+        border: 3px solid #000000;
+        padding: 10px; 
+        top: -1px;
+        min-height: 100%;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        animation-name: spin1;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+      }
+      @keyframes spin1 {
+        from {
+          transform:rotate(360deg);
+        }
+        to {
+          transform:rotate(0deg);
+        }
+      }
       div.settings {
         position: absolute;
         margin: 0 auto;
@@ -138,6 +162,14 @@ function easteregg3() {
         var decider3 = document.getElementById('easteregg3');
         if(decider3.checked){
           document.getElementById("body").className = "foregroundspin";
+        } else {
+          document.getElementById("body").className = "foreground";
+        }
+}
+function easteregg31() {
+        var decider31 = document.getElementById('easteregg31');
+        if(decider31.checked){
+          document.getElementById("body").className = "foregroundspin1";
         } else {
           document.getElementById("body").className = "foreground";
         }
@@ -230,7 +262,8 @@ document.addEventListener('keydown', function(e) {
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p><br>
           <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
           <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br>
-          <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3">Spin</label><br><br>
+          <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3">Spin Right</label>
+          <input type="checkbox" id="easteregg31" onclick="easteregg31()"><label for="easteregg31">Spin Left</label><br><br>
           <button onclick="settingsclose()" style="font-family: Comic Sans MS, cursive, sans-serif;"><b> X </b></button>
         </div>
       </center>
