@@ -112,18 +112,20 @@
         height: 
         font-family: "Comic Sans MS", cursive, sans-serif;
       } 
-      div.GoogleSearch {
-        position: absolute;
-        margin: 0 auto;
-        display: none;
-        padding: 3px;
-        border-radius: 5px;
-        bottom: 45%;
-        width: 40%; 
-        right: 30%; 
-        left: 30%;
-        font-family: "Comic Sans MS", cursive, sans-serif;
+      .tank {
+        position: relative;
+        padding-bottom: 72.73%;
+        padding-top: 0px;
+        height: 0;
+        overflow: hidden;
       } 
+	    .tank embed {
+    		position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
     </style>
     <script>
       var counter = 0;
@@ -231,11 +233,11 @@ document.addEventListener('keydown', function(e) {
         <div class="date">Version 27.04.2021</div>
         <h1>This is a website, Don't catch you slippin' up </h1>
         <p>Made by qa'vaQ and has no real purpose other than to place games that I can play while at school, usually when bored out of my mind.<br><b><a href="index.html">Click here to go back to the main page.</a></b></p><br><br>
-	      
-        <object width="704" height="512"></object>
-        <embed src="tanks.swf" width="704" height="512"> </embed>
-        
-	      <div class="settings" id="settings" style="display: none;">
+        <div class="tank">     
+          <object width="704" height="512"></object>
+          <embed src="tanks.swf" width="704" height="512"> </embed>
+         </div>
+         <div class="settings" id="settings" style="display: none;">
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p><br>
           <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
           <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br>
