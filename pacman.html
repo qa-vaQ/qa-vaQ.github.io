@@ -11,71 +11,251 @@
       }
       p {
         font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 15px;
+        font-size: 0.90vw;
       }
       h1 {
         font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 30px;
+        font-size: 2.05vw;
       }
       a {
         font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 14px;
+        font-size: 0.85vw;
         color: black;
         text-decoration: none
       }
+      label {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 0.75vw;
+      }
       div.date {
         position: absolute;
-        right: 10px;
-        top: 1px;
-        width: 70px;
+        right: 0.1%;
+        top: 0.1%;
+        width: 10%;
         font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 12px;
+        font-size: 0.85vw;
         color: black;
       }
-      div.foreground{
+      div.foreground {
         position: absolute;
-        left: 40px;
-        right: 40px;
-        top: 40px;
-        bottom: 40px;
+        left: 20%;
+        right: 20%;
         background-color: white;
         border: 3px solid #000000;
-        padding: 1px; 
-        border-radius: 25px;
+        padding: 5px; 
+        top: -1px;
+        min-height: 100%;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+      }
+      div.foregroundspin {  
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        background-color: white;
+        border: 3px solid #000000;
+        padding: 5px; 
+        top: -1px;
+        min-height: 100%;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+      }
+      div.foregroundspin1 {  
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        background-color: white;
+        border: 3px solid #000000;
+        padding: 5px; 
+        top: -1px;
+        min-height: 100%;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        animation-name: spin1;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+      }
+      div.settings {
+        position: absolute;
+        margin: 0 auto;
+        display: none;
+        border: 2px solid #000000;
+        background-color: white;
+        padding: 3px;
+        border-radius: 5px;
+        bottom: 38%;
+        width: 26%; 
+        right: 37%; 
+        left: 37%;
+        height: ;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+      } 
+      div.GoogleSearch {
+        position: absolute;
+        margin: 0 auto;
+        display: none;
+        padding: 3px;
+        border-radius: 5px;
+        bottom: 45%;
+        width: 40%; 
+        right: 30%; 
+        left: 30%;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+      } 
+      .videowrapper {
+        width: 100%;
+        overflow: hidden;
+      } 
+      .video1 {
+        position: absolute;
+        left: 1%;
+        width: 32.3%;
+      }
+      .video2 {
+        position: absolute;
+        width: 33.2%;
+        left: 33.3%;
+        right: 33.3%;
+      }
+      .video3 {
+        position: absolute;
+        width: 32.3%;
+        right: 1%;
+      }
+      @keyframes spin {
+        from {
+          transform:rotate(0deg);
+        }
+        to {
+          transform:rotate(360deg);
+        }
+      }
+      @keyframes spin1 {
+        from {
+          transform:rotate(360deg);
+        }
+        to {
+          transform:rotate(0deg);
+        }
       }
     </style>
     <script>
       var counter = 0;
-      var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
+var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
 
-      function setup() {
-        setInterval(changeColor, 3000);
-      }
+function setup() {
+  setInterval(changeColor, 3000);
+ }
  
-      function changeColor() {
-        var body = document.body;
-        body.style.backgroundColor = colors[counter];
+function changeColor() {
+  var body = document.body;
+  body.style.backgroundColor = colors[counter];
   
-        if(counter == 6) {
-         counter = 0;
+  if(counter == 6) {
+    counter = 0;
+  } else {
+    counter++;
+  }
+}
+function easteregg() {
+        var decider1 = document.getElementById('easteregg');
+        if(decider1.checked){
+          document.getElementById("body").style.transform = "rotate(180deg)";
         } else {
-          counter++;
-      }
+          document.getElementById("body").style.transform = "rotate(0deg)";
+        }
     }
+function easteregg2() {
+        var decider2 = document.getElementById('easteregg2');
+        if(decider2.checked){
+            document.getElementById("body").style.filter = "invert(1)";
+        } else {
+          document.getElementById("body").style.filter = "invert(0)";
+        }
+    }
+function easteregg3() {
+        var decider3 = document.getElementById('easteregg3');
+        if(decider3.checked){
+          document.getElementById("body").className = "foregroundspin";
+        } else {
+          document.getElementById("body").className = "foreground";
+        }
+}
+function easteregg31() {
+        var decider31 = document.getElementById('easteregg31');
+        if(decider31.checked){
+          document.getElementById("body").className = "foregroundspin1";
+        } else {
+          document.getElementById("body").className = "foreground";
+        }
+}
+function settingsopen() {
+        document.getElementById("settings").style.display = "block";
+    }
+function settingsclose() {
+        document.getElementById("settings").style.display = "none";
+    }
+function google() {
+        document.getElementById("google").style.display = "block";
+    }
+// a key map of allowed keys
+var allowedKeys = {
+  37: 'left',
+  38: 'up',
+  39: 'right',
+  40: 'down',
+  65: 'a',
+  66: 'b'
+};
+
+// the 'official' Konami Code sequence
+var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+
+// a variable to remember the 'position' the user has reached so far.
+var konamiCodePosition = 0;
+
+// add keydown event listener
+document.addEventListener('keydown', function(e) {
+  // get the value of the key code from the key map
+  var key = allowedKeys[e.keyCode];
+  // get the value of the required key from the konami code
+  var requiredKey = konamiCode[konamiCodePosition];
+
+  // compare the key with the required key
+  if (key == requiredKey) {
+
+    // move to the next key in the konami code sequence
+    konamiCodePosition++;
+
+    // if the last key is reached, activate cheats
+    if (konamiCodePosition == konamiCode.length) {
+      settingsopen();
+      alert("Cheat Code Recognised");
+      konamiCodePosition = 0;
+    }
+  } else {
+    konamiCodePosition = 0;
+  }
+});
     window.google={kEI:"Quz2S63qIYeglAfw8oHGCg",kEXPI:"17259,23663,24477,24661,24745,24770,24808",kCSI:{e:"17259,23663,24477,24661,24745,24770,24808",ei:"Quz2S63qIYeglAfw8oHGCg",expi:"17259,23663,24477,24661,24745,24770,24808"},ml:function(){},pageState:"#",kHL:"en",time:function(){return(new Date).getTime()},log:function(b,d,c){var a=new Image,e=google,g=e.lc,f=e.li;a.onerror=(a.onload=(a.onabort=function(){delete g[f]}));g[f]=a;c=c||"/gen_204?atyp=i&ct="+b+"&cad="+d+"&zx="+google.time();a.src=c;e.li=f+1},lc:[],li:0,j:{en:1,l:function(){},e:function(){},b:location.hash&&location.hash!="#",bv:3,pl:[],mc:0,sc:0.5},Toolbelt:{}};(function(){for(var d=0,c;c=["ad","bc","p","pa","zd","ac","pc","pah","ph","sa","xx","zc","zz"][d++];)(function(a){google.j[a]=function(){google.j.pl.push([a,arguments])}})(c)})();
     window.google.sn="webhp";window.google.timers={load:{t:{start:(new Date).getTime()}}};try{window.google.pt=window.gtbExternal&&window.gtbExternal.pageT();}catch(u){}window.google.jsrt_kill=1;
   </script>
   </head>
   <body onload="setup()">
-    <div class="foreground">
+    <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
       <center>
-        <div class="date">Version 13.03.2021</div>
+        <div class="date">Version 28.04.2021</div>
         <h1>This is a website, Don't catch you slippin' up </h1>
         <p>Made by qa'vaQ and has no real purpose other than to place games that I can play while at school, usually when bored out of my mind.<br><b><a href="index.html">Click here to go back to the main page.</a></b></p>
         <p>
-    <script>window.google={kEI:"Quz2S63qIYeglAfw8oHGCg",kEXPI:"17259,23663,24477,24661,24745,24770,24808",kCSI:{e:"17259,23663,24477,24661,24745,24770,24808",ei:"Quz2S63qIYeglAfw8oHGCg",expi:"17259,23663,24477,24661,24745,24770,24808"},ml:function(){},pageState:"#",kHL:"en",time:function(){return(new Date).getTime()},log:function(b,d,c){var a=new Image,e=google,g=e.lc,f=e.li;a.onerror=(a.onload=(a.onabort=function(){delete g[f]}));g[f]=a;c=c||"/gen_204?atyp=i&ct="+b+"&cad="+d+"&zx="+google.time();a.src=c;e.li=f+1},lc:[],li:0,j:{en:1,l:function(){},e:function(){},b:location.hash&&location.hash!="#",bv:3,pl:[],mc:0,sc:0.5},Toolbelt:{}};(function(){for(var d=0,c;c=["ad","bc","p","pa","zd","ac","pc","pah","ph","sa","xx","zc","zz"][d++];)(function(a){google.j[a]=function(){google.j.pl.push([a,arguments])}})(c)})();
-     window.google.sn="webhp";window.google.timers={load:{t:{start:(new Date).getTime()}}};try{window.google.pt=window.gtbExternal&&window.gtbExternal.pageT();}catch(u){}window.google.jsrt_kill=1;
-     </script>
+        <script>window.google={kEI:"Quz2S63qIYeglAfw8oHGCg",kEXPI:"17259,23663,24477,24661,24745,24770,24808",kCSI:{e:"17259,23663,24477,24661,24745,24770,24808",ei:"Quz2S63qIYeglAfw8oHGCg",expi:"17259,23663,24477,24661,24745,24770,24808"},ml:function(){},pageState:"#",kHL:"en",time:function(){return(new Date).getTime()},log:function(b,d,c){var a=new Image,e=google,g=e.lc,f=e.li;a.onerror=(a.onload=(a.onabort=function(){delete g[f]}));g[f]=a;c=c||"/gen_204?atyp=i&ct="+b+"&cad="+d+"&zx="+google.time();a.src=c;e.li=f+1},lc:[],li:0,j:{en:1,l:function(){},e:function(){},b:location.hash&&location.hash!="#",bv:3,pl:[],mc:0,sc:0.5},Toolbelt:{}};(function(){for(var d=0,c;c=["ad","bc","p","pa","zd","ac","pc","pah","ph","sa","xx","zc","zz"][d++];)(function(a){google.j[a]=function(){google.j.pl.push([a,arguments])}})(c)})();
+        window.google.sn="webhp";window.google.timers={load:{t:{start:(new Date).getTime()}}};try{window.google.pt=window.gtbExternal&&window.gtbExternal.pageT();}catch(u){}window.google.jsrt_kill=1;
+        </script>
 
 
 
