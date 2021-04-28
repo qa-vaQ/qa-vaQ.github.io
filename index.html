@@ -107,28 +107,20 @@
         left: 30%;
         font-family: "Comic Sans MS", cursive, sans-serif;
       } 
-      .videos {
-        position: relative;
-        padding-top: 75%;
-        height: 0;
-        overflow: hidden;
+      .videowrapper {
+        width:100%       
       } 
-      .videos iframe1 {
-        position: absolute;
-        right: 0%;
-        left: 0%;
+      .video1 {
+        float: left;
         width: 32.3%;
       }
-      .videos iframe2 {
-        position: absolute;
-        right: 0%;
+      .video2 {
+        width: 32.3%;
         left: 32.3%;
-        width: 32.3%;
+        right: 32.3%;
       }
-      .videos iframe3 {
-        position: absolute;
-        right: 0%;
-        left: 64.6%;
+      .video3 {
+        float: right;
         width: 32.3%;
       }
       @keyframes spin {
@@ -277,10 +269,16 @@ document.addEventListener('keydown', function(e) {
             </form>
           </div>
         </p>    
-        <div class="videos">
-          <iframe1 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe1> 
-          <iframe2 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe2>
-          <iframe3 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe3>
+        <div class="videowrapper">
+          <div class="video1">
+            <iframe1 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe1> 
+          </div>
+          <div class="video2">
+            <iframe2 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe2>
+          </div>
+          <div class="video3">
+            <iframe3 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe3>
+          </div>
         </div>
         <div class="settings" id="settings" style="display: none;">
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p><br>
