@@ -64,14 +64,6 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear; 
       }
-      @keyframes spin {
-        from {
-          transform:rotate(0deg);
-        }
-        to {
-          transform:rotate(360deg);
-        }
-      }
       div.foregroundspin1 {  
         position: absolute;
         left: 20%;
@@ -87,14 +79,6 @@
         animation-duration: 5000ms;
         animation-iteration-count: infinite;
         animation-timing-function: linear; 
-      }
-      @keyframes spin1 {
-        from {
-          transform:rotate(360deg);
-        }
-        to {
-          transform:rotate(0deg);
-        }
       }
       div.settings {
         position: absolute;
@@ -123,6 +107,34 @@
         left: 30%;
         font-family: "Comic Sans MS", cursive, sans-serif;
       } 
+      .videos {
+        position: relative;
+        padding-top: 75%;
+        height: 0;
+        overflow: hidden;
+      } 
+      .videos iframe {
+        position: absolute;
+        right: 0%;
+        left: 0%;
+        width: 32.3%;
+      }
+      @keyframes spin {
+        from {
+          transform:rotate(0deg);
+        }
+        to {
+          transform:rotate(360deg);
+        }
+      }
+      @keyframes spin1 {
+        from {
+          transform:rotate(360deg);
+        }
+        to {
+          transform:rotate(0deg);
+        }
+      }
     </style>
     <script>
       var counter = 0;
@@ -253,11 +265,11 @@ document.addEventListener('keydown', function(e) {
             </form>
           </div>
         </p>    
-        <p style="width: 100%">
+        <div class="videos">
           <iframe style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
           <iframe style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </p>
+        </div>
         <div class="settings" id="settings" style="display: none;">
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p><br>
           <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
