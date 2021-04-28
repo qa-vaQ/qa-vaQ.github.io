@@ -113,10 +113,22 @@
         height: 0;
         overflow: hidden;
       } 
-      .videos iframe {
+      .videos iframe1 {
         position: absolute;
         right: 0%;
         left: 0%;
+        width: 32.3%;
+      }
+      .videos iframe2 {
+        position: absolute;
+        right: 0%;
+        left: 32.3%;
+        width: 32.3%;
+      }
+      .videos iframe3 {
+        position: absolute;
+        right: 0%;
+        left: 64.6%;
         width: 32.3%;
       }
       @keyframes spin {
@@ -266,9 +278,9 @@ document.addEventListener('keydown', function(e) {
           </div>
         </p>    
         <div class="videos">
-          <iframe style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-          <iframe style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe1 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/i6RFccBmqM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+          <iframe2 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/2ZIpFytCSVc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe3 style="width: 32.3%; height: 250px" src="https://www.youtube.com/embed/aRsWk4JZa5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="settings" id="settings" style="display: none;">
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p><br>
