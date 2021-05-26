@@ -4,11 +4,14 @@ var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", 
 function setup() {
   setInterval(changeColor, 3000);
  }
- 
+
+var colour1 = localStorage.getItem(colour0);
+document.body.style.backgroundColor = colour1
+
 function changeColor() {
   var body = document.body;
   body.style.backgroundColor = colors[counter];
-  
+  localStorage.setItem(body.style.backgroundColor, colour0);
   if(counter == 6) {
     counter = 0;
   } else {
