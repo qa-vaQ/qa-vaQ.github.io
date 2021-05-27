@@ -13,6 +13,7 @@ function changeColor() {
   var body = document.body;
   body.style.backgroundColor = colors[counter];
   localStorage.setItem(colour0, body.style.backgroundColor);
+  console.log(colour0)
   if(counter == 6) {
     counter = 0;
   } else {
