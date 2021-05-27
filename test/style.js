@@ -3,11 +3,11 @@ var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", 
 
 function setup() {
   setInterval(changeColor, 3000);
+  var colour0 = localStorage.getItem(colour0);
+  var body1 = document.body;
+  body1.style.backgroundColor = colour0;
  }
  
-var colour0 = localStorage.getItem(colour0);
-var body1 = document.body
-body1.style.backgroundColor = colour0
 
 function changeColor() {
   var body = document.body;
