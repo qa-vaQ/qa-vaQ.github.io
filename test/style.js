@@ -6,7 +6,7 @@ function setup() {
  }
  
 var colour0 = localStorage.getItem(colour0);
-document.body.style.backgroundColor = colour1
+document.body.style.backgroundColor = colour0
 
 function changeColor() {
   var body = document.body;
