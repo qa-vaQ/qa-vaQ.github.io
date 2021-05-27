@@ -4,8 +4,8 @@ var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", 
 function setup() {
   setInterval(changeColor, 3000);
  }
-
-var colour1 = localStorage.getItem(colour0);
+ 
+var colour0 = localStorage.getItem(colour0);
 document.body.style.backgroundColor = colour1
 
 function changeColor() {
