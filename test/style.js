@@ -12,6 +12,7 @@ function setup() {
 function changeColor() {
   var body = document.body;
   body.style.backgroundColor = colors[counter];
+  var colour0 = ""
   localStorage.setItem(colour0, body.style.backgroundColor);
   console.log(colour0)
   if(counter == 6) {
