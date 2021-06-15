@@ -6,7 +6,7 @@
     <style>
       body {
         overflow:hidden;
-        background-color: #00FFFF;
+        background-color: #000000;
         transition: all 3.0s linear;
       }
       #myVideo {
@@ -224,23 +224,6 @@
       }
     </style>
     <script>
-      var counter = 0;
-      var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
-
-      function setup() {
-        setInterval(changeColor, 3000);
-       }
-
-      function changeColor() {
-        var body = document.body;
-        body.style.backgroundColor = colors[counter];
-
-        if(counter == 6) {
-          counter = 0;
-        } else {
-          counter++;
-        }
-      }
       function profile() {
         document.getElementById("profile").style.display = "block";
         document.getElementById("projects").style.display = "none";
