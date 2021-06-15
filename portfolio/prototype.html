@@ -9,9 +9,17 @@
         background-color: #00FFFF;
         transition: all 3.0s linear;
       }
+      #myVideo {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+      }
       p {
         font-family: "Comic Sans MS", cursive, sans-serif;
         font-size: 0.90vw;
+        margin: 0px;
       }
       h10 {
         font-family: "Comic Sans MS", cursive, sans-serif;
@@ -34,7 +42,6 @@
         left: 20%;
         right: 20%;
         background-color: ;
-        border: 3px solid #000000;
         padding: 5px; 
         top: 0px;
         min-height: 100%;
@@ -47,59 +54,107 @@
         height: 20%;
         right: 0px;
         left: 0px;
-        background-color: ;
+        background-color: rgba(22, 22, 22, 0.9);
+        color: white;
         font-size: 0;
+        border-right: 0.2vw solid #000000;
+        border-left: 0.2vw solid #000000;
       }
       div.loweruppersegment {
         position: absolute;
-        bottom: -3px;
+        bottom: 0px;
         right: -1px;
         left: -1px;
         min-width: 100%;
+	background-color: red;
         font-size: 0;
       }
       div.home {
         position: absolute;
-        bottom: -3px;
-        width: 5%;
-        left: -1px;
+        width: 3%;
+        bottom: 0px;
+        left: 0px;
+        font-size: 0;
+      }
+      div.nothome {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        right: 0px;
+        width: 97%;
+      }
+      div.mainsegment {
+        position: absolute;
+        top: 20%;
+        height: 100%;
+        right: 0px;
+        left: 0px;
+        background-color: ;
         font-size: 0;
       }
       button.button1 {
         height: 100%;
         width: 25%;
-        border-right: solid black 1px;
-        border-left: solid black 1px;
-        border-bottom: solid black 2px;
+        border-top: none;        
+        border-right: solid black 0.1vw;
+        border-left: solid black 0.1vw;
+        border-bottom: solid black 0.2vw;
         margin: 0px;
+        padding: 0px;
         font-family: "Comic Sans MS", cursive, sans-serif;
         font-size: 0.9vw;
       }
       button.button2 {
         height: 100%;
         width: 100%;
-        border-right: solid black 1px;
-        border-left: solid black 1px;
-        border-bottom: solid black 2px;
+        border-top: none;
+        border-right: solid black 0.1vw;
+        border-left: solid black 0.1vw;
+        border-bottom: solid black 0.2vw;
         margin: 0px;
+        padding: 0px;
         font-family: "Comic Sans MS", cursive, sans-serif;
         font-size: 0.9vw;
       }
       div.profile {
         position: absolute;
-        top: 20%
+        top: 0px;
+        background-color: rgba(22, 22, 22, .7);
+        min-height: 100%;
+        width: 99.5%;
+        border-right: 0.2vw solid #000000;
+        border-left: 0.2vw solid #000000;
+        color: white;
       }
       div.projects {
         position: absolute;
-        top: 20%
+        top: 0px;
+        background-color: rgba(22, 22, 22, .7);
+        min-height: 100%;
+        width: 99.5%;
+        border-right: 0.2vw solid #000000;
+        border-left: 0.2vw solid #000000;
+        color: white;
       }
       div.about {
         position: absolute;
-        top: 20%
+        top: 0px;
+        background-color: rgba(22, 22, 22, .7);
+        min-height: 100%;
+        width: 99.5%;
+        border-right: 0.2vw solid #000000;
+        border-left: 0.2vw solid #000000;
+        color: white;
       }
       div.contact {
         position: absolute;
-        top: 20%
+        top: 0px;
+        background-color: rgba(22, 22, 22, .7);
+        min-height: 100%;
+        width: 99.5%;
+        border-right: 0.2vw solid #000000;
+        border-left: 0.2vw solid #000000;
+        color: white;
       }
       div.foregroundspin {  
         position: absolute;
@@ -192,7 +247,6 @@
         document.getElementById("projectbutton").disabled = false;
         document.getElementById("aboutbutton").disabled = false;
         document.getElementById("contactbutton").disabled = false;
-        
       }
       function project() {
         document.getElementById("profile").style.display = "none";
@@ -223,6 +277,16 @@
         document.getElementById("projectbutton").disabled = false;
         document.getElementById("aboutbutton").disabled = false;
         document.getElementById("contactbutton").disabled = true;
+      }
+      function home() {
+        document.getElementById("profile").style.display = "none";
+        document.getElementById("projects").style.display = "none";
+        document.getElementById("about").style.display = "none";
+        document.getElementById("contact").style.display = "none";
+        document.getElementById("profilebutton").disabled = false;
+        document.getElementById("projectbutton").disabled = false;
+        document.getElementById("aboutbutton").disabled = false;
+        document.getElementById("contactbutton").disabled = false;
       }
       function easteregg() {
               var decider1 = document.getElementById('easteregg');
@@ -288,33 +352,41 @@
       });
     </script>
   </head>
-  <body onload="setup()">
+  <body onload="">
+    <video autoplay muted loop id="myVideo" style="transform: rotate(180deg);">
+      <source src="1080p Galaxy Loop by Animoplex.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
     <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
       <div class="uppersegment">
         <center>
-          <h10>Freddy Mills Portfolio</h10><br>
+          <h10>Freddy Mills' Portfolio</h10><br>
           <div class="loweruppersegment">
             <div class="home">
-              <button class="button2">H</button>
+              <button class="button2" onclick="home()">H</button>
             </div>
-            <button class="button1" id="profilebutton" onclick="profile()" style="left: 5%">Profile</button>
-            <button class="button1" id="projectbutton" onclick="project()">Projects</button>
-            <button class="button1" id="aboutbutton" onclick="about()">About</button>
-            <button class="button1" id="contactbutton" onclick="contact()">Contact</button>
+            <div class="nothome">
+              <button class="button1" id="profilebutton" onclick="profile()" style="left: 5%">Profile</button>
+              <button class="button1" id="projectbutton" onclick="project()">Projects</button>
+              <button class="button1" id="aboutbutton" onclick="about()">About</button>
+              <button class="button1" id="contactbutton" onclick="contact()">Contact</button>
+            </div>
           </div>
         </center>
       </div>
-      <div class="profile" id="profile" style="display: block;">
-        <p>Test1</p>
-      </div>
-      <div class="projects" id="projects" style="display: none;">
-        <p>Test2</p>
-      </div>
-      <div class="about" id="about" style="display: none;">
-        <p>Test3</p>
-      </div>
-      <div class="contact" id="contact" style="display: none;">
-        <p>Test4</p>
+      <div class="mainsegment">
+        <div class="profile" id="profile" style="display: none;">
+          <p>Test1</p>
+        </div>
+        <div class="projects" id="projects" style="display: none;">
+          <p>Test2</p>
+        </div>
+        <div class="about" id="about" style="display: none;">
+          <p>Test3</p>
+        </div>
+        <div class="contact" id="contact" style="display: none;">
+          <p>Test4</p>
+        </div>
       </div>
       <div class="settings" id="settings" style="display: none;">
         <center>
