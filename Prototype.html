@@ -55,7 +55,7 @@
         bottom: -3px;
         right: -1px;
         left: -1px;
-		min-width: 100%;
+		    min-width: 100%;
         font-size: 0;
       }
       button {
@@ -67,6 +67,22 @@
         margin: 0px;
         font-family: "Comic Sans MS", cursive, sans-serif;
         font-size: 0.9vw;
+      }
+      div.profile {
+        id="profile"
+        display: block;
+      }
+      div.projects {
+        id="projects"
+        display: none;
+      }
+      div.about {
+        id="about"
+        display: none;
+      }
+      div.contact {
+        id="contact"
+        display: none;
       }
       div.foregroundspin {  
         position: absolute;
@@ -150,6 +166,34 @@
           counter++;
         }
       }
+      function profile() {
+        document.getElementById("profile").style.display = "block";
+        document.getElementById("projects").style.display = "none";
+        document.getElementById("about").style.display = "none";
+        document.getElementById("contact").style.display = "none";
+        document.getElementById("profilebutton").disabled = true;
+      }
+      function project() {
+        document.getElementById("profile").style.display = "none";
+        document.getElementById("projects").style.display = "block";
+        document.getElementById("about").style.display = "none";
+        document.getElementById("contact").style.display = "none";
+        document.getElementById("projectbutton").disabled = true;
+      }
+      function about() {
+        document.getElementById("profile").style.display = "none";
+        document.getElementById("projects").style.display = "none";
+        document.getElementById("about").style.display = "block";
+        document.getElementById("contact").style.display = "none";
+        document.getElementById("aboutbutton").disabled = true;
+      }
+      function contact() {
+        document.getElementById("profile").style.display = "none";
+        document.getElementById("projects").style.display = "none";
+        document.getElementById("about").style.display = "none";
+        document.getElementById("contact").style.display = "block";
+        document.getElementById("contactbutton").disabled = true;
+      }
       function easteregg() {
               var decider1 = document.getElementById('easteregg');
               if(decider1.checked){
@@ -184,9 +228,10 @@
       }
       function settingsopen() {
               document.getElementById("settings").style.display = "block";
-          }
+      }
       function settingsclose() {
               document.getElementById("settings").style.display = "none";
+      }
       var allowedKeys = {
         37: 'left',
         38: 'up',
@@ -219,24 +264,36 @@
         <center>
           <h10>Freddy Mills Portfolio</h10><br>
           <div class="loweruppersegment">
-            <button>Profile</button>
-            <button>Projects</button>
-            <button>About</button>
-            <button>Contact</button>
+            <button id="profilebutton" onclick="profile()">Profile</button>
+            <button id="projectbutton" onclick="project()">Projects</button>
+            <button id="aboutbutton" onclick="about()">About</button>
+            <button id="contactbutton" onclick="contact()">Contact</button>
           </div>
         </center>
       </div>
-        <div class="settings" id="settings" style="display: none;">
+      <div class="profile">
+        <p>Test1</p>
+      </div>
+      <div class="projects">
+        <p>Test2</p>
+      </div>
+      <div class="about">
+        <p>Test3</p>
+      </div>
+      <div class="contact">
+        <p>Test4</p>
+      </div>
+      <div class="settings" id="settings" style="display: none;">
+        <center>
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p>
           <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
           <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br>
           <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3">Spin Clockwise</label><br>
           <input type="checkbox" id="easteregg31" onclick="easteregg31()"><label for="easteregg31">Spin Anti-Clockwise</label><br><br>
           <button onclick="settingsclose()" style="font-family: Comic Sans MS, cursive, sans-serif;"><b> X </b></button>
-        </div>
-      </center>
+        </center>
+      </div>
     </div>
   </body>
 </html>
-<!-- Nice Code, Isnt it! ツ --!>
 <!-- Nice Code, Isnt it! ツ --!>
