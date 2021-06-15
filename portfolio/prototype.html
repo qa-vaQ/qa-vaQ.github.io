@@ -40,6 +40,7 @@
         min-height: 100%;
         border-bottom-style: hidden;
         border-top-style: hidden;
+        opacity: 0;
       }
       div.uppersegment {
         position: absolute;
@@ -47,8 +48,9 @@
         height: 20%;
         right: 0px;
         left: 0px;
-        background-color: ;
+        background-color: Black;
         font-size: 0;
+        opacity: 0.5;
       }
       div.loweruppersegment {
         position: absolute;
@@ -58,9 +60,26 @@
         min-width: 100%;
         font-size: 0;
       }
-      button {
+      div.home {
+        position: absolute;
+        bottom: -3px;
+        width: 5%;
+        left: -1px;
+        font-size: 0;
+      }
+      button1 {
         height: 100%;
         width: 25%;
+        border-right: solid black 1px;
+        border-left: solid black 1px;
+        border-bottom: solid black 2px;
+        margin: 0px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 0.9vw;
+      }
+      button2 {
+        height: 100%;
+        width: 100%;
         border-right: solid black 1px;
         border-left: solid black 1px;
         border-bottom: solid black 2px;
@@ -277,10 +296,13 @@
         <center>
           <h10>Freddy Mills Portfolio</h10><br>
           <div class="loweruppersegment">
-            <button id="profilebutton" onclick="profile()">Profile</button>
-            <button id="projectbutton" onclick="project()">Projects</button>
-            <button id="aboutbutton" onclick="about()">About</button>
-            <button id="contactbutton" onclick="contact()">Contact</button>
+            <div class="home">
+              <button class="button2">H</button>
+            </div>
+            <button class="button1" id="profilebutton" onclick="profile()" style="left: 5%">Profile</button>
+            <button class="button1" id="projectbutton" onclick="project()">Projects</button>
+            <button class="button1" id="aboutbutton" onclick="about()">About</button>
+            <button class="button1" id="contactbutton" onclick="contact()">Contact</button>
           </div>
         </center>
       </div>
