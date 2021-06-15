@@ -70,15 +70,19 @@
       }
       div.profile {
         position: absolute;
+        top: 30%
       }
       div.projects {
         position: absolute;
+        top: 30%
       }
       div.about {
         position: absolute;
+        top: 30%
       }
       div.contact {
         position: absolute;
+        top: 30%
       }
       div.foregroundspin {  
         position: absolute;
@@ -168,26 +172,39 @@
         document.getElementById("about").style.display = "none";
         document.getElementById("contact").style.display = "none";
         document.getElementById("profilebutton").disabled = true;
+        document.getElementById("projectbutton").disabled = false;
+        document.getElementById("aboutbutton").disabled = false;
+        document.getElementById("contactbutton").disabled = false;
+        
       }
       function project() {
         document.getElementById("profile").style.display = "none";
         document.getElementById("projects").style.display = "block";
         document.getElementById("about").style.display = "none";
         document.getElementById("contact").style.display = "none";
+        document.getElementById("profilebutton").disabled = false;
         document.getElementById("projectbutton").disabled = true;
+        document.getElementById("aboutbutton").disabled = false;
+        document.getElementById("contactbutton").disabled = false;
       }
       function about() {
         document.getElementById("profile").style.display = "none";
         document.getElementById("projects").style.display = "none";
         document.getElementById("about").style.display = "block";
         document.getElementById("contact").style.display = "none";
+        document.getElementById("profilebutton").disabled = false;
+        document.getElementById("projectbutton").disabled = false;
         document.getElementById("aboutbutton").disabled = true;
+        document.getElementById("contactbutton").disabled = false;
       }
       function contact() {
         document.getElementById("profile").style.display = "none";
         document.getElementById("projects").style.display = "none";
         document.getElementById("about").style.display = "none";
         document.getElementById("contact").style.display = "block";
+        document.getElementById("profilebutton").disabled = false;
+        document.getElementById("projectbutton").disabled = false;
+        document.getElementById("aboutbutton").disabled = false;
         document.getElementById("contactbutton").disabled = true;
       }
       function easteregg() {
@@ -270,13 +287,13 @@
       <div class="profile" id="profile" style="display: block;">
         <p>Test1</p>
       </div>
-      <div class="projects" id="projects" style="display: block;">>
+      <div class="projects" id="projects" style="display: none;">>
         <p>Test2</p>
       </div>
-      <div class="about" id="about" style="display: block;">>
+      <div class="about" id="about" style="display: none;">>
         <p>Test3</p>
       </div>
-      <div class="contact" id="contact" style="display: block;">>
+      <div class="contact" id="contact" style="display: none;">>
         <p>Test4</p>
       </div>
       <div class="settings" id="settings" style="display: none;">
