@@ -13,9 +13,10 @@
         font-family: "Comic Sans MS", cursive, sans-serif;
         font-size: 0.90vw;
       }
-      h1 {
+      h10 {
         font-family: "Comic Sans MS", cursive, sans-serif;
         font-size: 2.05vw;
+        margin: 5px;
       }
       a {
         font-family: "Comic Sans MS", cursive, sans-serif;
@@ -29,12 +30,13 @@
       }
       div.foreground {
         position: absolute;
+        min-width: 100px;
         left: 15%;
         right: 15%;
         background-color: white;
         border: 3px solid #000000;
         padding: 5px; 
-        top: -1px;
+        top: 0px;
         min-height: 100%;
         border-bottom-style: hidden;
         border-top-style: hidden;
@@ -42,8 +44,201 @@
       div.uppersegment {
         position: absolute;
         top: 0px;
-        height: 15%;
-        right: -3px;
+        height: 20%;
+        right: 0px;
+        left: 0px;
+        background-color: gry;
+        font-size: 0;
+      }
+      div.loweruppersegment {
+        position: absolute;
+        bottom: -3px;
+        right: -1px;
+        left: -1px;
+		min-width: 100%;
+        font-size: 0;
+      }
+      button {
+        height: 100%;
+        width: 25%;
+        border-right: solid black 1px;
+        border-left: solid black 1px;
+        border-bottom: solid black 2px;
+        margin: 0px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 0.9vw;
+      }
+      div.foregroundspin {  
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        background-color: white;
+        border: 3px solid #000000;
+        padding: 5px; 
+        top: -1px;
+        min-height: 100%;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+      }
+      div.foregroundspin1 {  
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        background-color: white;
+        border: 3px solid #000000;
+        padding: 5px; 
+        top: -1px;
+        min-height: 100%;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+        animation-name: spin1;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+      }
+      div.settings {
+        position: absolute;
+        margin: 0 auto;
+        display: none;
+        border: 2px solid #000000;
+        background-color: white;
+        padding: 3px;
+        border-radius: 5px;
+        bottom: 38%;
+        width: 26%; 
+        right: 37%; 
+        left: 37%;
+        height: ;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+      } 
+      @keyframes spin {
+        from {
+          transform:rotate(0deg);
+        }
+        to {
+          transform:rotate(360deg);
+        }
+      }
+      @keyframes spin1 {
+        from {
+          transform:rotate(360deg);
+        }
+        to {
+          transform:rotate(0deg);
+        }
+      }
+    </style>
+    <script>
+      var counter = 0;
+      var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
+
+      function setup() {
+        setInterval(changeColor, 3000);
+       }
+
+      function changeColor() {
+        var body = document.body;
+        body.style.backgroundColor = colors[counter];
+
+        if(counter == 6) {
+          counter = 0;
+        } else {
+          counter++;
+        }
+      }
+      function easteregg() {
+              var decider1 = document.getElementById('easteregg');
+              if(decider1.checked){
+                document.getElementById("body").style.transform = "rotate(180deg)";
+              } else {
+                document.getElementById("body").style.transform = "rotate(0deg)";
+              }
+          }
+      function easteregg2() {
+              var decider2 = document.getElementById('easteregg2');
+              if(decider2.checked){
+                  document.getElementById("body").style.filter = "invert(1)";
+              } else {
+                document.getElementById("body").style.filter = "invert(0)";
+              }
+          }
+      function easteregg3() {
+              var decider3 = document.getElementById('easteregg3');
+              if(decider3.checked){
+                document.getElementById("body").className = "foregroundspin";
+              } else {
+                document.getElementById("body").className = "foreground";
+              }
+      }
+      function easteregg31() {
+              var decider31 = document.getElementById('easteregg31');
+              if(decider31.checked){
+                document.getElementById("body").className = "foregroundspin1";
+              } else {
+                document.getElementById("body").className = "foreground";
+              }
+      }
+      function settingsopen() {
+              document.getElementById("settings").style.display = "block";
+          }
+      function settingsclose() {
+              document.getElementById("settings").style.display = "none";
+      var allowedKeys = {
+        37: 'left',
+        38: 'up',
+        39: 'right',
+        40: 'down',
+        65: 'a',
+        66: 'b'
+      };
+      var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+      var konamiCodePosition = 0;
+      document.addEventListener('keydown', function(e) {
+        var key = allowedKeys[e.keyCode];
+        var requiredKey = konamiCode[konamiCodePosition];
+        if (key == requiredKey) {
+          konamiCodePosition++;
+          if (konamiCodePosition == konamiCode.length) {
+            settingsopen();
+            alert("Cheat Code Recognised");
+            konamiCodePosition = 0;
+          }
+        } else {
+          konamiCodePosition = 0;
+        }
+      });
+    </script>
+  </head>
+  <body onload="setup()">
+    <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
+      <div class="uppersegment">
+        <center>
+          <h10>Freddy Mills Portfolio</h10><br>
+          <div class="loweruppersegment">
+            <button>Profile</button>
+            <button>Projects</button>
+            <button>About</button>
+            <button>Contact</button>
+          </div>
+        </center>
+      </div>
+        <div class="settings" id="settings" style="display: none;">
+          <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p>
+          <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
+          <input type="checkbox" id="easteregg2" onclick="easteregg2()"><label for="easteregg2">Colour Invert</label><br>
+          <input type="checkbox" id="easteregg3" onclick="easteregg3()"><label for="easteregg3">Spin Clockwise</label><br>
+          <input type="checkbox" id="easteregg31" onclick="easteregg31()"><label for="easteregg31">Spin Anti-Clockwise</label><br><br>
+          <button onclick="settingsclose()" style="font-family: Comic Sans MS, cursive, sans-serif;"><b> X </b></button>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>
+<!-- Nice Code, Isnt it! ツ --!>
         left: -3px;
         border: dotted black;
       }
