@@ -55,7 +55,7 @@
         bottom: -3px;
         right: -1px;
         left: -1px;
-		    min-width: 100%;
+        min-width: 100%;
         font-size: 0;
       }
       button {
@@ -69,20 +69,16 @@
         font-size: 0.9vw;
       }
       div.profile {
-        id="profile"
-        display: block;
+        position: absolute;
       }
       div.projects {
-        id="projects"
-        display: none;
+        position: absolute;
       }
       div.about {
-        id="about"
-        display: none;
+        position: absolute;
       }
       div.contact {
-        id="contact"
-        display: none;
+        position: absolute;
       }
       div.foregroundspin {  
         position: absolute;
@@ -271,16 +267,16 @@
           </div>
         </center>
       </div>
-      <div class="profile">
+      <div class="profile" id="profile" style="display: block;">
         <p>Test1</p>
       </div>
-      <div class="projects">
+      <div class="projects" id="projects" style="display: block;">>
         <p>Test2</p>
       </div>
-      <div class="about">
+      <div class="about" id="about" style="display: block;">>
         <p>Test3</p>
       </div>
-      <div class="contact">
+      <div class="contact" id="contact" style="display: block;">>
         <p>Test4</p>
       </div>
       <div class="settings" id="settings" style="display: none;">
