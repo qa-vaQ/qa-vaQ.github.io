@@ -39,6 +39,12 @@
         border-bottom-style: hidden;
         border-top-style: hidden;
       }
+      div.uppersegment {
+        position: absolute;
+        top: 0px;
+        height: 10%;
+        width: 100%;
+      }
       div.foregroundspin {  
         position: absolute;
         left: 20%;
@@ -186,8 +192,10 @@
   </head>
   <body onload="setup()">
     <div class="foreground" id="body" style="transform: rotate(0deg);" style="filter: invert(0);">
-      <center>
+      <div class="uppersegment">
         <h1>Freddy Mills Portfolio</h1>
+        <button>Test</button>
+      </div>
         <div class="settings" id="settings" style="display: none;">
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p>
           <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
