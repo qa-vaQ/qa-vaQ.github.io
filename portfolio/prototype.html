@@ -312,8 +312,10 @@
         document.getElementsByClassName("pages").style.display = "none";
         document.getElementsByClassName("button1").disabled = false;
         document.getElementsByClassName("button2").disabled = false;
-        document.getElementById("profilebutton").disabled = true;
-        document.getElementById("profile").style.display = "block";
+        setTimeout(() => {
+          document.getElementById("profilebutton").disabled = true;
+          document.getElementById("profile").style.display = "block";
+        }, 10)
       }
       function project() {
         document.getElementById("profile").style.display = "none";
