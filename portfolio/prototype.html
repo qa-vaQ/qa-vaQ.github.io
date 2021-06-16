@@ -244,6 +244,9 @@
       }
     </style>
     <script>
+      function load() {
+        document.getElementById("homebutton").disabled = true;
+      }
       function profile() {
         document.getElementById("profile").style.display = "block";
         document.getElementById("projects").style.display = "none";
@@ -363,7 +366,7 @@
       });
     </script>
   </head>
-  <body onload="">
+  <body onload="load">
     <video autoplay muted loop id="myVideo" style="transform: rotate(180deg);">
       <source src="Space Nebula Background - Free HD Stock Footage - No Copyright - 4K.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
