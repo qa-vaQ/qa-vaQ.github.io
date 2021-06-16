@@ -317,6 +317,10 @@
       var pagetag1 = ""
       var pagetag2 = ""
       var pagetag = ""
+      var notbuttontag1 = ""
+      var notbuttontag2 = ""
+      var notbuttontag = ""
+      
       function load() {
         document.getElementById("homebutton").disabled = true;
       }
@@ -334,10 +338,10 @@
           var pagetag2 = String(y);
           var pagetag = pagetag1.concat(pagetag2);
           document.getElementById(pagetag).style.display = "none";
-          var buttontag1 = "button";
-          var buttontag2 = String(y);
-          var buttontag = buttontag1.concat(buttontag2);
-          document.getElementById(buttontag).disabled = false;
+          var notbuttontag1 = "button";
+          var notbuttontag2 = String(y);
+          var notbuttontag = notbuttontag1.concat(notbuttontag2);
+          document.getElementById(notbuttontag).disabled = false;
         }
       }
       function easteregg() {
