@@ -311,77 +311,24 @@
       function load() {
         document.getElementById("homebutton").disabled = true;
       }
-      function profile(x) {
-        document.getElementById("profile").style.display = "black";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = true;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
-      }
-      function project() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "block";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = true;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
-      }
-      function about() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "block";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = true;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
-      }
-      function contact() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "block";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = true;
-        document.getElementById("homebutton").disabled = false;
-      }
-      function home() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = true;
-      }
-      function projectlist(x) {
+      function projectlist(x, y) {
         var projecttag1 = "project";
         var projecttag2 = String(x);
         var projecttag = projecttag1.concat(projecttag2);
-        console.log(projecttag)
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
-        
         document.getElementById(projecttag).style.display = "block";
+        var buttontag1 = "button"
+        var buttontag2 = String(x);
+        var buttontag = buttontag1.concat(buttontag2);
+        document.getElementById(buttontag).disabled = true;
+        for (x > y > 0, 10 > y > x) {
+          var pagetag1 = "page"
+          var pagetag2 = String(y)
+          var pagetag = pagetag1.concat(pagetag2)
+          document.getElementById(pagetag).style.display = "none";
+          var buttontag1 = "button"
+          var buttontag2 = String(y)
+          var buttontag = buttontag1.concat(buttontag2)
+          document.getElementById(buttontag).disabled = false;
       }
       function easteregg() {
               var decider1 = document.getElementById('easteregg');
@@ -463,37 +410,37 @@
               <button class="button2" id="homebutton" onclick="home()">⌂</button>
             </div>
             <div class="nothome">
-              <button class="button1" id="profilebutton" onclick="profile(profile)" style="left: 5%">Profile</button>
+              <button class="button1" id="button1" onclick="projectlist(1, 1)" style="left: 5%">Profile</button>
               <div class="dropdownbutton">
-                <button class="dropdownbutton" id="projectbutton" onclick="project()">Projects</button>
+                <button class="dropdownbutton" id="button2" onclick="projectlist(2, 2)">Projects</button>
                 <div class="dropdownbutton-content">
                   <a href="">DropButton1</a>
                   <a href="">DropButton2</a>
                   <a href="">DropButton3</a>
-                  <a href="">DropButton4</a>
-                  <button onclick="projectlist(1)">DropButton5</button>
+                  <a href=""DropButton4</a>
+                  <button id="button5" onclick="projectlist(5, 5)">DropButton5</button>
                 </div>
               </div>
-              <button class="button1" id="aboutbutton" onclick="about()">About</button>
-              <button class="button1" id="contactbutton" onclick="contact()">Contact</button>
+              <button class="button1" id="button3" onclick="projectlist(3, 3)">About</button>
+              <button class="button1" id="button4" onclick="projectlist(4, 4)">Contact</button>
             </div>
           </div>
         </center>
       </div>
       <div class="mainsegment">
-        <div class="page" id="profile" style="display: none;">
+        <div class="page" id="page1" style="display: none;">
           <p>Test1</p>
         </div>
-        <div class="page" id="projects" style="display: none;">
+        <div class="page" id="page2" style="display: none;">
           <p>Test2</p>
         </div>
-        <div class="page" id="about" style="display: none;">
+        <div class="page" id="page3" style="display: none;">
           <p>Test3</p>
         </div>
-        <div class="page" id="contact" style="display: none;">
+        <div class="page" id="page4" style="display: none;">
           <p>Test4</p>
         </div>
-        <div class="page" id="project1" style="display: none;">
+        <div class="page" id="page5" style="display: none;">
           <p>Test5</p>
         </div>
       </div>
