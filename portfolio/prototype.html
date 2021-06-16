@@ -180,16 +180,21 @@
       .dropdownbutton-content {
         display: none;
         position: absolute;
-        width: 100%;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
+        height: 100%;
+        width: 100%;
+        border-top: none;        
+        border-right: solid black 0.1vw;
+        border-left: solid black 0.1vw;
+        border-bottom: solid black 0.2vw;
         background-color: #00bebe;
         margin: 0px;
         padding: 0px;
         font-family: "Segoe UI", cursive, sans-serif;
         font-size: 2vh;
         color: black;
-      }
+      } 
       .dropdown-content a {
         color: black;
         padding: 12px 16px;
@@ -449,7 +454,10 @@
               <div class="dropdownbutton">
                 <button class="dropdownbutton" id="projectbutton" onclick="project()">Projects</button>
                 <div class="dropdownbutton-content">
-                  <a href="">Greg</a>
+                  <a href="">DropButton1</a><br>
+                  <a href="">DropButton2</a><br>
+                  <a href="">DropButton3</a><br>
+                  <a href="">DropButton4</a>
                 </div>
               </div>
               <button class="button1" id="aboutbutton" onclick="about()">About</button>
