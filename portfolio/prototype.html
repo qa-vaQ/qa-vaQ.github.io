@@ -178,6 +178,8 @@
         font-size: 2vh;
         color: black;
       } 
+      button.dropdownbutton:toggle {
+        
       button.dropdownbutton:focus {
         background-color: #009797;
         color: black;
@@ -304,63 +306,8 @@
         }
       }
     </style>
+    <script src="div.js" type="text/javascript"></script>
     <script>
-      function load() {
-        document.getElementById("homebutton").disabled = true;
-      }
-      function profile() {
-        document.getElementsByClassName("pages").style.display = "none";
-        document.getElementsByClassName("button1").disabled = false;
-        document.getElementsByClassName("button2").disabled = false;
-        setTimeout(() => {
-          document.getElementById("profilebutton").disabled = true;
-          document.getElementById("profile").style.display = "block";
-        }, 500)
-      }
-      function project() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "block";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = true;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
-      }
-      function about() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "block";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = true;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
-      }
-      function contact() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "block";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = true;
-        document.getElementById("homebutton").disabled = false;
-      }
-      function home() {
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = true;
-      }
       function easteregg() {
               var decider1 = document.getElementById('easteregg');
               if(decider1.checked){
@@ -441,11 +388,11 @@
               <button class="button2" id="homebutton" onclick="home()">⌂</button>
             </div>
             <div class="nothome">
-              <button class="button1" id="profilebutton" onclick="profile()" style="left: 5%">Profile</button>
+              <button class="button1" id="profilebutton" onclick="profile(profile)" style="left: 5%">Profile</button>
               <div class="dropdownbutton">
                 <button class="dropdownbutton" id="projectbutton" onclick="project()">Projects</button>
                 <div class="dropdownbutton-content">
-                  <a href="">DropButton1</a>
+                  <a onload="project(1)">DropButton1</a>
                   <a href="">DropButton2</a>
                   <a href="">DropButton3</a>
                   <a href="">DropButton4</a>
