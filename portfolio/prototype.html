@@ -230,37 +230,7 @@
       .dropdownbutton:hover .dropdownbutton-content {
         display: block;
       }
-      div.profile {
-        position: absolute;
-        top: 0px;
-        background-color: rgba(22, 22, 22, .7);
-        min-height: 100%;
-        width: 99.5%;
-        border-right: 0.2vw solid #000000;
-        border-left: 0.2vw solid #000000;
-        color: white;
-      }
-      div.projects {
-        position: absolute;
-        top: 0px;
-        background-color: rgba(22, 22, 22, .7);
-        min-height: 100%;
-        width: 99.5%;
-        border-right: 0.2vw solid #000000;
-        border-left: 0.2vw solid #000000;
-        color: white;
-      }
-      div.about {
-        position: absolute;
-        top: 0px;
-        background-color: rgba(22, 22, 22, .7);
-        min-height: 100%;
-        width: 99.5%;
-        border-right: 0.2vw solid #000000;
-        border-left: 0.2vw solid #000000;
-        color: white;
-      }
-      div.contact {
+      div.page {
         position: absolute;
         top: 0px;
         background-color: rgba(22, 22, 22, .7);
@@ -339,15 +309,11 @@
         document.getElementById("homebutton").disabled = true;
       }
       function profile() {
-        document.getElementById("profile").style.display = "block";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
+        document.getElementsByClassName("pages").style.display = "none";
+        document.getElementsByClassName("button1").disabled = false;
+        document.getElementsByClassName("button2").disabled = false;
         document.getElementById("profilebutton").disabled = true;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
+        document.getElementById("profile").style.display = "block";
       }
       function project() {
         document.getElementById("profile").style.display = "none";
@@ -490,16 +456,16 @@
         </center>
       </div>
       <div class="mainsegment">
-        <div class="profile" id="profile" style="display: none;">
+        <div class="page" id="profile" style="display: none;">
           <p>Test1</p>
         </div>
-        <div class="projects" id="projects" style="display: none;">
+        <div class="page" id="projects" style="display: none;">
           <p>Test2</p>
         </div>
-        <div class="about" id="about" style="display: none;">
+        <div class="page" id="about" style="display: none;">
           <p>Test3</p>
         </div>
-        <div class="contact" id="contact" style="display: none;">
+        <div class="page" id="contact" style="display: none;">
           <p>Test4</p>
         </div>
       </div>
