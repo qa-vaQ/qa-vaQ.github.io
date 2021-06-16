@@ -149,6 +149,36 @@
         font-size: 2vh;
         color: black;
       }
+      .dropdownbutton {
+        position: relative;
+        display: inline-block;
+        font-size: 0;
+      }
+      .dropdownbutton-content {
+        display: none;
+        position: absolute;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        background-color: #00bebe;
+        margin: 0px;
+        padding: 0px;
+        font-family: "Segoe UI", cursive, sans-serif;
+        font-size: 2vh;
+        color: black;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
       div.profile {
         position: absolute;
         top: 0px;
@@ -390,10 +420,15 @@
           <div class="loweruppersegment">
             <div class="home">
               <button class="button2" id="homebutton" onclick="home()">⌂</button>
+              <div class="dropdownbutton-content">
+                <a href
             </div>
             <div class="nothome">
               <button class="button1" id="profilebutton" onclick="profile()" style="left: 5%">Profile</button>
-              <button class="button1" id="projectbutton" onclick="project()">Projects</button>
+              <div class="dropdown button">
+                <button class="button1" id="projectbutton" onclick="project()">Projects</button>
+                <
+              </div>
               <button class="button1" id="aboutbutton" onclick="about()">About</button>
               <button class="button1" id="contactbutton" onclick="contact()">Contact</button>
             </div>
