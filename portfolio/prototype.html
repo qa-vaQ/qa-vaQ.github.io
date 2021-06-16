@@ -365,23 +365,6 @@
         document.getElementById("contactbutton").disabled = false;
         document.getElementById("homebutton").disabled = true;
       }
-      function project(x) {
-        var projecttag1 = "project";
-        var projecttag2 = String(x);
-        var projecttag = projecttag1.concat(projecttag2);
-        document.getElementById("profile").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("about").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-        document.getElementById("profilebutton").disabled = false;
-        document.getElementById("projectbutton").disabled = false;
-        document.getElementById("aboutbutton").disabled = false;
-        document.getElementById("contactbutton").disabled = false;
-        document.getElementById("homebutton").disabled = false;
-        
-        document.getElementById(projecttag).style.display = "block";
-      }
-
       function easteregg() {
               var decider1 = document.getElementById('easteregg');
               if(decider1.checked){
