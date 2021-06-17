@@ -371,6 +371,18 @@
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = true;
       }
+      function project0() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "block";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("button0").disabled = false;
+        document.getElementById("button1").disabled = false;
+        document.getElementById("button2").disabled = false;
+        document.getElementById("button3").disabled = false;
+        document.getElementById("button4").disabled = false;
+      }
       function project1() {
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
@@ -491,7 +503,7 @@
               <div class="dropdownbutton">
                 <button class="dropdownbutton" id="button2" onclick="project()">Projects</button>
                 <div class="dropdownbutton-content">
-                  <a onclick="project()">Overview</a>
+                  <a onclick="project0()">Overview</a>
                   <a onclick="project1()">Project1</a>
                   <a>Project2</a>
                   <a>Project3</a>
