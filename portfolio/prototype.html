@@ -317,6 +317,9 @@
         document.getElementById("page3").style.display = "none";
         document.getElementById("page4").style.display = "none";
         document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
         document.getElementById("button0").disabled = true;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -329,6 +332,9 @@
         document.getElementById("page3").style.display = "none";
         document.getElementById("page4").style.display = "none";
         document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = true;
         document.getElementById("button2").disabled = false;
@@ -341,6 +347,9 @@
         document.getElementById("page3").style.display = "none";
         document.getElementById("page4").style.display = "none";
         document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = true;
@@ -353,6 +362,9 @@
         document.getElementById("page3").style.display = "block";
         document.getElementById("page4").style.display = "none";
         document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -365,23 +377,14 @@
         document.getElementById("page3").style.display = "none";
         document.getElementById("page4").style.display = "block";
         document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = true;
-      }
-      function project0() {
-        document.getElementById("page1").style.display = "none";
-        document.getElementById("page2").style.display = "block";
-        document.getElementById("page3").style.display = "none";
-        document.getElementById("page4").style.display = "none";
-        document.getElementById("page5").style.display = "none";
-        document.getElementById("button0").disabled = false;
-        document.getElementById("button1").disabled = false;
-        document.getElementById("button2").disabled = false;
-        document.getElementById("button3").disabled = false;
-        document.getElementById("button4").disabled = false;
       }
       function project1() {
         document.getElementById("page1").style.display = "none";
@@ -389,6 +392,54 @@
         document.getElementById("page3").style.display = "none";
         document.getElementById("page4").style.display = "none";
         document.getElementById("page5").style.display = "block";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
+        document.getElementById("button0").disabled = false;
+        document.getElementById("button1").disabled = false;
+        document.getElementById("button2").disabled = false;
+        document.getElementById("button3").disabled = false;
+        document.getElementById("button4").disabled = false;
+      }
+      function project2() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "block";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
+        document.getElementById("button0").disabled = false;
+        document.getElementById("button1").disabled = false;
+        document.getElementById("button2").disabled = false;
+        document.getElementById("button3").disabled = false;
+        document.getElementById("button4").disabled = false;
+      }
+      function project3() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "block";
+        document.getElementById("page8").style.display = "none";
+        document.getElementById("button0").disabled = false;
+        document.getElementById("button1").disabled = false;
+        document.getElementById("button2").disabled = false;
+        document.getElementById("button3").disabled = false;
+        document.getElementById("button4").disabled = false;
+      }
+      function project4() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "block";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -503,11 +554,10 @@
               <div class="dropdownbutton">
                 <button class="dropdownbutton" id="button2" onclick="project()">Projects</button>
                 <div class="dropdownbutton-content">
-                  <a onclick="project0()">Overview</a>
                   <a onclick="project1()">Project1</a>
-                  <a>Project2</a>
-                  <a>Project3</a>
-                  <a>Project4</a>
+                  <a onclick="project2()">Project1</a>
+                  <a onclick="project3()">Project1</a>
+                  <a onclick="project4()">Project1</a>
                 </div>
               </div>
               <button class="button1" id="button3" onclick="about()">About</button>
@@ -518,19 +568,28 @@
       </div>
       <div class="mainsegment">
         <div class="page" id="page1" style="display: none;">
-          <p>Test1</p>
+          <p>Profile</p>
         </div>
         <div class="page" id="page2" style="display: none;">
-          <p>Test2</p>
+          <p>Project</p>
         </div>
         <div class="page" id="page3" style="display: none;">
-          <p>Test3</p>
+          <p>About</p>
         </div>
         <div class="page" id="page4" style="display: none;">
-          <p>Test4</p>
+          <p>Contact</p>
         </div>
         <div class="page" id="page5" style="display: none;">
-          <p>Test5</p>
+          <p>Project1</p>
+        </div>
+        <div class="page" id="page6" style="display: none;">
+          <p>Project2</p>
+        </div>
+        <div class="page" id="page7" style="display: none;">
+          <p>Project3</p>
+        </div>
+        <div class="page" id="page8" style="display: none;">
+          <p>Project4</p>
         </div>
       </div>
       <div class="settings" id="settings" style="display: none;">
