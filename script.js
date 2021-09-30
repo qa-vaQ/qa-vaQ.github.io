@@ -1,3 +1,4 @@
+var vid = document.getElementById("rick");
 function load() {
         document.getElementById("button0").disabled = true;
       }
@@ -17,6 +18,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function profile() {
         document.getElementById("page1").style.display = "block";
@@ -34,6 +36,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function project() {
         document.getElementById("page1").style.display = "none";
@@ -51,6 +54,7 @@ function load() {
         document.getElementById("button2").disabled = true;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function about() {
         document.getElementById("page1").style.display = "none";
@@ -68,6 +72,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = true;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function contact() {
         document.getElementById("page1").style.display = "none";
@@ -85,6 +90,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = true;
+        vid.pause(); 
       }
       function project1() {
         document.getElementById("page1").style.display = "none";
@@ -103,6 +109,7 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("game1").disabled = true;
+        vid.pause(); 
       }
       function project2() {
         document.getElementById("page1").style.display = "none";
@@ -120,6 +127,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function project3() {
         document.getElementById("page1").style.display = "none";
@@ -137,6 +145,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function project4() {
         document.getElementById("page1").style.display = "none";
@@ -154,6 +163,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function project5() {
         document.getElementById("page1").style.display = "none";
@@ -171,6 +181,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        vid.pause(); 
       }
       function project6() {
         document.getElementById("page1").style.display = "none";
@@ -188,7 +199,6 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
-        var vid = document.getElementById("rick");
         vid.play(); 
       }
       //function projectlist(x, y) {
