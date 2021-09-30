@@ -225,18 +225,13 @@
       .dropdownbutton-content a {
         color: black;
         font-size: 2vh;
-        width: 99.25%;
+        width: 100%;
         background-color: #00bebe;
         border-right: solid black 0.15vw;
         border-left: solid black 0.15vw;
         border-bottom: solid black 0.15vw;
         text-decoration: none;
         display: block;
-      }
-      @media (max-width:700px) {
-        dropdownbutton-content a {
-          width: 100%;
-        }
       }
       .dropdownbutton-content a:hover {
         background-color: #009797;
@@ -315,6 +310,22 @@
         }
         to {
           transform:rotate(0deg);
+        }
+      }
+      @media (max-width:600px) {
+        div.foreground {
+          position: absolute;
+          left: 0%;
+          right: 0%;
+          background-color: ;
+          padding: 5px; 
+          top: 0px;
+          min-height: 100%;
+          border-bottom-style: hidden;
+          border-top-style: hidden;
+        }
+        dropdownbutton-content a {
+          width: 100.25%;
         }
       }
     </style>
