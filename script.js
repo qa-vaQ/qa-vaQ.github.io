@@ -10,6 +10,8 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = true;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -25,6 +27,8 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = true;
         document.getElementById("button2").disabled = false;
@@ -40,6 +44,8 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = true;
@@ -55,6 +61,8 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -70,6 +78,8 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -85,6 +95,8 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -101,6 +113,8 @@ function load() {
         document.getElementById("page6").style.display = "block";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -116,6 +130,8 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "block";
         document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
@@ -131,6 +147,42 @@ function load() {
         document.getElementById("page6").style.display = "none";
         document.getElementById("page7").style.display = "none";
         document.getElementById("page8").style.display = "block";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "none";
+        document.getElementById("button0").disabled = false;
+        document.getElementById("button1").disabled = false;
+        document.getElementById("button2").disabled = false;
+        document.getElementById("button3").disabled = false;
+        document.getElementById("button4").disabled = false;
+      }
+      function project5() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "block";
+        document.getElementById("page10").style.display = "none";
+        document.getElementById("button0").disabled = false;
+        document.getElementById("button1").disabled = false;
+        document.getElementById("button2").disabled = false;
+        document.getElementById("button3").disabled = false;
+        document.getElementById("button4").disabled = false;
+      }
+      function project6() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "none";
+        document.getElementById("page8").style.display = "none";
+        document.getElementById("page9").style.display = "none";
+        document.getElementById("page10").style.display = "block";
         document.getElementById("button0").disabled = false;
         document.getElementById("button1").disabled = false;
         document.getElementById("button2").disabled = false;
