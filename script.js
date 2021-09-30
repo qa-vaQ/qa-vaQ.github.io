@@ -209,7 +209,7 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         var vid = document.getElementById("rick");
-        vid.pause(); 
+        vid.play(); 
       }
       //function projectlist(x, y) {
       //  var projecttag1 = "project";
