@@ -321,7 +321,7 @@ div.settings {
     font-family: "Segoe UI", cursive, sans-serif;
 }
 .video70 {
-    position: absolute;
+    position: relative;
     width: 70%;
     text-align: center;
     left: 15%;
