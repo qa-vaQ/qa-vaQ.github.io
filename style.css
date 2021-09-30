@@ -320,6 +320,13 @@ div.settings {
     height:;
     font-family: "Segoe UI", cursive, sans-serif;
 }
+.video70 {
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    left: 15%;
+    right: 15%;
+}
 .auto-resizable-iframe {
   max-width: 900px;
   margin: 0px auto;
