@@ -1,36 +1,397 @@
 body {
-  overflow:hidden;
-  background-color: #00FFFF;
-  transition: all 3.0s linear;
+    overflow: hidden;
+    background-color: #000000;
+    transition: all 3.0s linear;
 }
+
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+p {
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 1vw;
+    margin: 0px;
+}
+
+h10 {
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 6vh;
+    margin: 5px;
+}
+
+a {
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 0.85vw;
+    color: black;
+    text-decoration: none
+}
+
+label {
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 0.75vw;
+}
+
 div.foreground {
-  position: absolute;
-  left: 20%;
-  right: 20%;
-  background-color: white;
-  border: 3px solid #000000;
-  padding: 10px; 
-  min-height: 100%;
-  border-bottom-style: hidden;
-  border-top-style: hidden;
-  }
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    background-color:;
+    padding: 5px;
+    top: 0px;
+    min-height: 100%;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+}
+
+div.uppersegment {
+    position: absolute;
+    top: 0px;
+    height: 20%;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(22, 22, 22, 0.9);
+    color: white;
+    font-size: 0;
+    border-right: 0.2vw solid #000000;
+    border-left: 0.2vw solid #000000;
+    margin: auto;
+}
+
+div.loweruppersegment {
+    position: absolute;
+    bottom: 0px;
+    right: -1px;
+    left: -1px;
+    min-width: 100%;
+    background-color: red;
+    font-size: 0;
+}
+
+div.title {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+div.home {
+    position: absolute;
+    width: 3%;
+    bottom: 0px;
+    left: 0px;
+    font-size: 0;
+}
+
+div.nothome {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    width: 97%;
+}
+
+div.mainsegment {
+    position: absolute;
+    top: 20%;
+    height: 100%;
+    right: 0px;
+    left: 0px;
+    background-color:;
+    font-size: 0;
+}
+
+button.button1 {
+    height: 100%;
+    width: 25%;
+    border-top: none;
+    border-right: solid black 0.1vw;
+    border-left: solid black 0.1vw;
+    border-bottom: solid black 0.2vw;
+    background-color: #00bebe;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 2vh;
+    color: black;
+}
+
+    button.button1:focus {
+        background-color: #005959;
+        color: black;
+    }
+
+    button.button1:hover {
+        background-color: #009797;
+    }
+
+    button.button1:disabled {
+        background-color: #005959;
+        color: black;
+    }
+
+        button.button1:disabled:hover {
+            background-color: #005959;
+            color: black;
+        }
+
+button.button2:disabled {
+    background-color: #005959;
+    color: black;
+}
+
+    button.button2:disabled:hover {
+        background-color: #005959;
+        color: black;
+    }
+
+button.button2:hover {
+    background-color: #009797;
+    color: black;
+}
+
+button.button2 {
+    height: 100%;
+    width: 100%;
+    border-top: none;
+    border-right: solid black 0.1vw;
+    border-left: solid black 0.1vw;
+    border-bottom: solid black 0.2vw;
+    background-color: #00bebe;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 2vh;
+    color: black;
+}
+
+button.dropdownbutton {
+    height: 100%;
+    width: 100%;
+    border-top: none;
+    border-right: solid black 0.1vw;
+    border-left: solid black 0.1vw;
+    border-bottom: solid black 0.2vw;
+    background-color: #00bebe;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 2vh;
+    color: black;
+}
+
+    button.dropdownbutton:toggle {
+    }
+
+    button.dropdownbutton:focus {
+        background-color: #009797;
+        color: black;
+    }
+
+    button.dropdownbutton:disabled {
+        background-color: #005959;
+        color: black;
+    }
+
+    button.dropdownbutton:hover {
+        background-color: #009797;
+    }
+
+    button.dropdownbutton:disabled:hover {
+        background-color: #009797;
+    }
+
+div.dropdownbutton {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 25%
+}
+
+.dropdownbutton-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 99.25%;
+    left: -0.04vw;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color:;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 2vh;
+    color: black;
+    font-size: 0;
+    text-align: center;
+}
+
+    .dropdownbutton-content a {
+        color: black;
+        font-size: 2vh;
+        width: 100%;
+        background-color: #00bebe;
+        border-right: solid black 0.15vw;
+        border-left: solid black 0.15vw;
+        border-bottom: solid black 0.15vw;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdownbutton-content a:hover {
+            background-color: #009797;
+        }
+
+        .dropdownbutton-content a:disabled {
+            background-color: #005959;
+        }
+        
+        .dropdownbutton-content a:disabled:hover {
+            background-color: #005959;
+        }
+
+.dropdownbutton:hover .dropdownbutton-content {
+    display: block;
+}
+
+div.page {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(22, 22, 22, .7);
+    min-height: 100%;
+    width: 99.5%;
+    border-right: 0.2vw solid #000000;
+    border-left: 0.2vw solid #000000;
+    color: white;
+}
+
+div.foregroundspin {
+    position: absolute;
+    min-width: 100px;
+    left: 20%;
+    right: 20%;
+    background-color:;
+    padding: 5px;
+    top: 0px;
+    min-height: 100%;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+div.foregroundspin1 {
+    position: absolute;
+    min-width: 100px;
+    left: 20%;
+    right: 20%;
+    background-color:;
+    padding: 5px;
+    top: 0px;
+    min-height: 100%;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+    animation-name: spin1;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 div.settings {
-  position: absolute;
-  margin: 0 auto;
-  display: none;
-  border: 2px solid #6c757d;
-  background-color: white;
-  padding: 3px;
-  border-radius: 5px;
-  bottom: 45px;
-  width: 26%; 
-  right: 37%; 
-  left: 37%;
-  } 
-div.settingslocation {
-  margin: 0 auto;
-  position: absolute;
-  bottom: 5px;
-  right: 1%; 
-  left: 1%
+    position: absolute;
+    margin: 0 auto;
+    display: none;
+    border: 2px solid #000000;
+    background-color: #00bebe;
+    padding: 3px;
+    border-radius: 5px;
+    bottom: 38%;
+    width: 26%;
+    right: 37%;
+    left: 37%;
+    height:;
+    font-family: "Segoe UI", cursive, sans-serif;
+}
+.tank {
+    position: relative;
+    padding-bottom: 72.73%;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+}
+
+    .tank ruffle-embed {
+        position: absolute;
+        right: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        top: 4%;
+    }
+div.pacman {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    width: 100%;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin1 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width:600px) {
+    div.foreground {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        background-color:;
+        padding: 5px;
+        top: 0px;
+        min-height: 100%;
+        border-bottom-style: hidden;
+        border-top-style: hidden;
+    }
+
+    dropdownbutton-content a {
+        width: 100.25%;
+    }
+
+    div.home {
+        width: 10%;
+    }
+
+    div.nothome {
+        width: 90%;
+    }
+
+    button.button2 {
+        font-size: 1.75vh;
+    }
+
+    p {
+        font-size: 4vw;
+    }
 }
