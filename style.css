@@ -321,7 +321,7 @@ div.settings {
     font-family: "Segoe UI", cursive, sans-serif;
 }
 .auto-resizable-iframe {
-  max-width: 420px;
+  max-width: 900px;
   margin: 0px auto;
 }
 
