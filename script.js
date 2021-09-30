@@ -1,3 +1,4 @@
+var vid = document.getElementById("rick")
 function load() {
         document.getElementById("button0").disabled = true;
       }
@@ -112,7 +113,6 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
-        document.getElementById("game1").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
