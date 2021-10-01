@@ -387,7 +387,7 @@ div.pacman {
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     div.foreground {
         position: absolute;
         left: 0%;
