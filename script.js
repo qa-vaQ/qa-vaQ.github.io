@@ -78,7 +78,7 @@ function load() {
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
-      function contact() {
+      function project0() {
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
