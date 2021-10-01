@@ -126,7 +126,7 @@ button.button1 {
     }
 
     button.button1:hover {
-        background-color: #009797;
+        background-color: #00a5a5;
     }
 
     button.button1:disabled {
@@ -150,7 +150,7 @@ button.button2:disabled {
     }
 
 button.button2:hover {
-    background-color: #009797;
+    background-color: #00a5a5;
     color: black;
 }
 
@@ -198,7 +198,7 @@ button.dropdownbutton {
     }
 
     button.dropdownbutton:hover {
-        background-color: #009797;
+        background-color: #00a5a5;
     }
 
     button.dropdownbutton:disabled:hover {
@@ -245,7 +245,7 @@ div.dropdownbutton {
     }
 
         .dropdownbutton-content a:hover {
-            background-color: #009797;
+            background-color: #00a5a5;
         }
 
         .dropdownbutton-content a:disabled {
