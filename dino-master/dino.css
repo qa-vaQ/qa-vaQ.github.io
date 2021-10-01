@@ -4,9 +4,6 @@
  * Extract source code from chromium by congerh. */
 
 body {
-  verflow:hidden;
-  background-color: #00FFFF;
-  transition: all 3.0s linear;
   --google-blue-600: rgb(26, 115, 232);
   --google-blue-700: rgb(25, 103, 210);
   --google-gray-50: rgb(248, 249, 250);
@@ -17,10 +14,6 @@ body {
   word-wrap: break-word;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  font-size: 125%;
-}
 
 .icon {
   background-repeat: no-repeat;
@@ -47,19 +40,6 @@ html {
   font-size: .86667em;
   text-transform: uppercase;
   margin-top: 12px;
-}
-
-h1 {
-  color: var(--google-gray-900);
-  font-size: 1.6em;
-  font-weight: normal;
-  line-height: 1.25em;
-  margin-bottom: 16px;
-}
-
-h2 {
-  font-size: 1.2em;
-  font-weight: normal;
 }
 
 .icon {
