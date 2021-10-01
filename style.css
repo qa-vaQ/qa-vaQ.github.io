@@ -19,6 +19,13 @@ p {
     margin: 0px;
 }
 
+a {
+    font-family: "Segoe UI", cursive, sans-serif;
+    font-size: 1vw;
+    margin: 0px;
+    color: #0000EE;
+}
+
 h10 {
     font-family: "Segoe UI", cursive, sans-serif;
     font-size: 6vh;
