@@ -1,4 +1,3 @@
-var vid = document.getElementById("rick")
 function load() {
         document.getElementById("button0").disabled = true;
         document.getElementById("logo").disabled = true;
