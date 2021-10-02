@@ -1,6 +1,6 @@
 function load() {
         document.getElementById("button0").disabled = true;
-        document.getElementById("logo").disabled = true;
+        document.getElementById("pacman").disabled = true;
       }
       function home() {
         document.getElementById("page1").style.display = "none";
@@ -118,7 +118,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
-        document.getElementById("logo").disabled = false;
+        document.getElementById("pacman").disabled = false;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
