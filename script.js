@@ -1,6 +1,7 @@
 var vid = document.getElementById("rick")
 function load() {
         document.getElementById("button0").disabled = true;
+        document.getElementById("logo").disabled = true;
       }
       function home() {
         document.getElementById("page1").style.display = "none";
@@ -18,6 +19,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -37,6 +39,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -56,6 +59,7 @@ function load() {
         document.getElementById("button2").disabled = true;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -75,6 +79,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = true;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -94,6 +99,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = true;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -113,6 +119,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = false;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -132,6 +139,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -151,6 +159,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -170,6 +179,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -189,6 +199,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.pause(); 
       }
@@ -208,6 +219,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
+        document.getElementById("logo").disabled = true;
         var vid = document.getElementById("rick");
         vid.play(); 
       }
