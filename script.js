@@ -1,7 +1,9 @@
 function load() {
         document.getElementById("button0").disabled = true;
         document.getElementById("pacman").disabled = true;
-      }
+        var vid = document.getElementById("rick");
+        vid.pause(); 
+}
       function home() {
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
