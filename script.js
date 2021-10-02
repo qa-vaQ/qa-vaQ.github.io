@@ -218,7 +218,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
-        document.getElementById("logo").disabled = true;
+        document.getElementById("pacman").disabled = true;
         var vid = document.getElementById("rick");
         vid.play(); 
       }
