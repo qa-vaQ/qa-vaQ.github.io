@@ -2,7 +2,6 @@ var vid = document.getElementById("rick");
 function load() {
         document.getElementById("button0").disabled = true;
         document.getElementById("pacman").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
 }
       function home() {
@@ -22,7 +21,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function profile() {
@@ -42,7 +40,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project() {
@@ -62,7 +59,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function about() {
@@ -82,7 +78,6 @@ function load() {
         document.getElementById("button3").disabled = true;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project0() {
@@ -102,7 +97,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = true;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project1() {
@@ -122,7 +116,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("pacman").disabled = false;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project2() {
@@ -142,7 +135,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project3() {
@@ -162,7 +154,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project4() {
@@ -182,7 +173,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project5() {
@@ -202,7 +192,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        var vid = document.getElementById("rick");
         vid.pause(); 
       }
       function project6() {
@@ -222,7 +211,6 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("pacman").disabled = true;
-        var vid = document.getElementById("rick");
         vid.play(); 
       }
       //function projectlist(x, y) {
