@@ -1,10 +1,11 @@
-var vid = document.getElementById("rick");
 function load() {
+        var vid = document.getElementById("rick");
         document.getElementById("button0").disabled = true;
         document.getElementById("pacman").disabled = true;
         vid.pause(); 
 }
       function home() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -24,6 +25,7 @@ function load() {
         vid.pause(); 
       }
       function profile() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "block";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -43,6 +45,7 @@ function load() {
         vid.pause(); 
       }
       function project() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "block";
         document.getElementById("page3").style.display = "none";
@@ -62,6 +65,7 @@ function load() {
         vid.pause(); 
       }
       function about() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "block";
@@ -81,6 +85,7 @@ function load() {
         vid.pause(); 
       }
       function project0() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -100,6 +105,7 @@ function load() {
         vid.pause(); 
       }
       function project1() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -119,6 +125,7 @@ function load() {
         vid.pause(); 
       }
       function project2() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -138,6 +145,7 @@ function load() {
         vid.pause(); 
       }
       function project3() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -157,6 +165,7 @@ function load() {
         vid.pause(); 
       }
       function project4() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -176,6 +185,7 @@ function load() {
         vid.pause(); 
       }
       function project5() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -195,6 +205,7 @@ function load() {
         vid.pause(); 
       }
       function project6() {
+        var vid = document.getElementById("rick");
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
