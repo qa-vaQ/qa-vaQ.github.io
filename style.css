@@ -224,7 +224,7 @@ div.dropdownbutton {
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width: 100%;
+    width: 99.75%;
     left: -0.04vw;
     border-top: none;
     border-right: none;
