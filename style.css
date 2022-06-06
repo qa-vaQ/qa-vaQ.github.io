@@ -220,9 +220,8 @@ div.dropdownbutton {
 }
 
 .dropdownbutton-content {
-    display: block;
+    display: none;
     position: absolute;
-
     z-index: 1;
     width: 100.65%;
     background-color:;
