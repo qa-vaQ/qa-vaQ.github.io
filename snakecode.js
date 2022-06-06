@@ -332,22 +332,3 @@
     }
 
 })();
-  </script>
-  <script>
-  	var greg123 = 0;
-  	var colors = ["#00FFFF", "#2323ff", "#9311ff", "#ff1e1e", "#FF7F00", "#FFFF00", "#00FF00"];
-  
-  	function backman() {
-  	  setInterval(changeColor1, 3000);
-  	 }
-  
-  	 function changeColor1() {
-  	  var body = document.body;
-  	  body.style.backgroundColor = colors[greg123];
-  
-  	  if(greg123 == 6) {
-  	    greg123 = 0;
-  	  } else {
-  	    greg123++;
-  	  }
-  	}
