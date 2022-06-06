@@ -92,6 +92,7 @@ div.home {
     bottom: 0px;
     left: 0px;
     font-size: 0;
+    height: 3vh;
 }
 
 div.nothome {
