@@ -24,8 +24,8 @@
 }
 @import url("https://fonts.googleapis.com/css?family=VT323");
 
-            ::selection {color:#00bebe; background:transparent;}
-            ::-moz-selection {color:#00bebe; background:transparent;}
+            ::selection {color:#00bebe;}
+            ::-moz-selection {color:#00bebe;}
             
             *{
                 margin: 0;
@@ -168,6 +168,6 @@
             }
             
             #setting input:checked + label{
-                background-color: #FFF;
+                background-color: #00bebe;
                 color: #000;
             }
