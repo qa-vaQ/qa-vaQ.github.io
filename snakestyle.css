@@ -24,8 +24,8 @@
 }
 @import url("https://fonts.googleapis.com/css?family=VT323");
 
-            ::selection {color:#FFFFFF; background:transparent;}
-            ::-moz-selection {color:#FFFFFF; background:transparent;}
+            ::selection {color:#00bebe; background:transparent;}
+            ::-moz-selection {color:#00bebe; background:transparent;}
             
             *{
                 margin: 0;
