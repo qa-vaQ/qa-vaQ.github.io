@@ -1,11 +1,10 @@
 function load() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("button0").disabled = true;
         document.getElementById("pacman").disabled = true;
-        vid.pause(); 
 }
       function home() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -22,10 +21,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function profile() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "block";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -41,11 +39,9 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
-        document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function project() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "block";
         document.getElementById("page3").style.display = "none";
@@ -62,10 +58,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function about() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "block";
@@ -82,10 +77,9 @@ function load() {
         document.getElementById("button3").disabled = true;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function project0() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -102,10 +96,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = true;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function project1() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -122,10 +115,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("pacman").disabled = false;
-        vid.pause(); 
       }
       function project2() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -142,10 +134,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function project3() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -162,10 +153,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function project4() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -182,10 +172,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function project5() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -202,10 +191,9 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("logo").disabled = true;
-        vid.pause(); 
       }
       function project6() {
-        var vid = document.getElementById("rick");
+        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -221,8 +209,7 @@ function load() {
         document.getElementById("button2").disabled = false;
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
-        document.getElementById("pacman").disabled = true;
-        vid.play(); 
+        document.getElementById("pacman").disabled = true; 
       }
       //function projectlist(x, y) {
       //  var projecttag1 = "project";
