@@ -193,7 +193,6 @@ function load() {
         document.getElementById("logo").disabled = true;
       }
       function project6() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -210,6 +209,7 @@ function load() {
         document.getElementById("button3").disabled = false;
         document.getElementById("button4").disabled = false;
         document.getElementById("pacman").disabled = true; 
+        document.getElementById("rick").play();
       }
       //function projectlist(x, y) {
       //  var projecttag1 = "project";
