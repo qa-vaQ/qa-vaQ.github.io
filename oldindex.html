@@ -6,6 +6,9 @@
     <link rel="icon" href="Images/smol.ico"></link>
     <meta name="google-site-verification" content="xNcdQbuIRh2VrAvTcD0skRJ4Q-BUHctp72WMb5pgXAU" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <script>function load() {
+      document.getElementById("dino")[0].contentWindow.document.body.focus();
+      }</script>
     <style>
       body {
         overflow:hidden;
@@ -304,7 +307,7 @@
             </form>
           </div>
         </p>    
-        <embed type="text/html" data="https://qa-vaq.github.io/GoogleDino.html" width="800px" height="600px" style="overflow:auto;"></embed>
+        <iframe id="dino" src="https://qa-vaq.github.io/GoogleDino.html" width="800px" height="600px"></iframe>
         <div class="settings" id="settings" style="display: none;">
           <p><b>Cheats Enabled</b><br>Available Cheats Listed:</p>
           <input type="checkbox" id="easteregg" onclick="easteregg()"><label for="easteregg">Australia Mode</label><br>
