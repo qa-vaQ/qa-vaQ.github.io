@@ -1,10 +1,8 @@
 function load() {
-        document.getElementById("rick").pause();
         document.getElementById("button0").disabled = true;
         document.getElementById("pacman").disabled = true;
 }
       function home() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -23,7 +21,6 @@ function load() {
         document.getElementById("logo").disabled = true;
       }
       function profile() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "block";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -41,7 +38,6 @@ function load() {
         document.getElementById("button4").disabled = false;
       }
       function project() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "block";
         document.getElementById("page3").style.display = "none";
@@ -60,7 +56,6 @@ function load() {
         document.getElementById("logo").disabled = true;
       }
       function about() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "block";
@@ -79,7 +74,6 @@ function load() {
         document.getElementById("logo").disabled = true;
       }
       function project0() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -98,7 +92,6 @@ function load() {
         document.getElementById("logo").disabled = true;
       }
       function project1() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -117,7 +110,6 @@ function load() {
         document.getElementById("pacman").disabled = false;
       }
       function project2() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -137,7 +129,6 @@ function load() {
         onDocumentLoad()
       }
       function project3() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -156,7 +147,6 @@ function load() {
         document.getElementById("logo").disabled = true;
       }
       function project4() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
@@ -175,7 +165,6 @@ function load() {
         document.getElementById("logo").disabled = true;
       }
       function project5() {
-        document.getElementById("rick").pause();
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "none";
         document.getElementById("page3").style.display = "none";
