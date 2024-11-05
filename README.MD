@@ -1,7 +1,2 @@
-# URL: https://qa-vaq.github.io #
+# URL: freddymills.dev #
 
-## Project Notes: ##
-* Created 6th December 2018
-* Over 1000 Changes 
-* My Longest Running Project
-* My Most Useless Project
